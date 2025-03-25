@@ -1,0 +1,14 @@
+{
+    // Node and npm configuration
+    "npm.autoDetect": "on",
+    "debug.node.autoAttach": "never",
+    "files.exclude": {
+        "tsconfig.build.json": true
+    },
+    // Code style, regular and ESLint related
+    "files.trimTrailingWhitespace": true,
+    "eslint.validate": ["typescript"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
+}

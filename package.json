@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Gonzalo Andrade",
+  "scripts": {
+    "start": "tsc && dotenvx run node dist/server.js",
+    "build": "tsc",
+    "test": "npm run lint",
+    "lint": "npx eslint --format stylish --color --fix"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.39.0",
+    "@eslint/js": "^9.23.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/helmet": "^0.0.48",
+    "@types/node": "^22.13.13",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0"
+  }
+}

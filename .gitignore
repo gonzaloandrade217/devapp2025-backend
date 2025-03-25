@@ -1,0 +1,9 @@
+# PackageManager specific lock files
+package-lock.json
+node_modules/
+
+# Build process generated files
+tsconfig.build.json
+
+# Dist generated folder
+dist/
