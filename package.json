@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
+  "license": "MIT",
   "author": "Gonzalo Andrade",
   "scripts": {
     "start": "tsc && dotenvx run node dist/server.js",

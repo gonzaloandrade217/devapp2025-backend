@@ -7,3 +7,5 @@ tsconfig.build.json
 
 # Dist generated folder
 dist/
+
+.env

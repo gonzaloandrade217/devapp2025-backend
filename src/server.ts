@@ -16,9 +16,39 @@ app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());
 
+// Define la interfaz para los datos de login
+interface LoginData {
+    email: string;
+    password: string;
+}
+
+// Define la interfaz para la respuesta de saludo
+interface Saludo {
+    destinatario: string;
+    mensaje: string;
+    hora: string;
+}
+
 // Mis endpoints van acá
 app.get('/',(req, res) => {
     res.json('Hello Word');
+});
+
+//Login
+app.post('/login',(req, res) => {
+    const loginData:LoginData = req.body;
+
+    console.log(`User: ${loginData.email}`);
+    //console.log(`Password: ${loginData.password}`);
+
+    const saludoRespuesta:Saludo = {
+        destinatario: loginData.email,
+        mensaje: 'Hola',
+        hora: Date.now().toString()
+    }
+
+    //res.statusCode = 200;
+    res.json(saludoRespuesta);
 });
 
 // Levantamos el servidor en el puerto que configuramos
