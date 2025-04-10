@@ -2,11 +2,12 @@ import { Persona } from "../interfaces/persona.interface";
 import { personas } from "../data/personas.data";
 
 export class PersonaRepository {
-  private personas: Persona[] = [];
+  private personas: Persona[] = personas;
   private lastId = 0;
 
-  getAll(): Persona[] {
-    return personas; // Puede ser una consulta a DB luego.
+  
+  async getAll(): Promise<Persona[]> {
+    return Promise.resolve(this.personas);
   }
 
   async getById(id: number): Promise<Persona | null> {
@@ -14,27 +15,27 @@ export class PersonaRepository {
     return personas.find(p => p.id === id) || null;
   }
 
-    // Edit: Actualización parcial
-    update(id: number, personaData: Partial<Persona>): Persona | null {
+  // Edit: Actualización parcial
+  async update(id: number, personas: Partial<Persona>): Promise<Persona | null> {
       const index = this.personas.findIndex(p => p.id === id);
-      if (index === -1) return null;
+      if (index === -1) return Promise.resolve(null);
       
-      this.personas[index] = { ...this.personas[index], ...personaData };
-      return this.personas[index];
-    }
-  
-    // Add: Crear nueva entidad
-    create(personaData: Omit<Persona, 'id'>): Persona {
-      this.lastId++;
-      const nuevaPersona: Persona = { id: this.lastId, ...personaData };
+      this.personas[index] = { ...this.personas[index], ...personas };
+      return Promise.resolve(this.personas[index]);
+  }
+
+  // Add: Crear nueva entidad
+  async create(personas: Omit<Persona, 'id'>): Promise<Persona> {
+      const newId = Math.max(...this.personas.map(p => p.id)) + 1;
+      const nuevaPersona: Persona = { id: newId, ...personas };
       this.personas.push(nuevaPersona);
-      return nuevaPersona;
-    }
-  
-    // Delete: Eliminar entidad
-    delete(id: number): boolean {
+      return Promise.resolve(nuevaPersona);
+  }
+
+  // Delete: Eliminar entidad
+  async delete(id: number): Promise<boolean> {
       const initialLength = this.personas.length;
       this.personas = this.personas.filter(p => p.id !== id);
-      return this.personas.length < initialLength;
-    }
+      return Promise.resolve(this.personas.length < initialLength);
+  }
 }
