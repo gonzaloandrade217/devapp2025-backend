@@ -1,102 +1,48 @@
 import { Request, Response } from 'express';
 import { PersonaService } from '../services/persona.service';
+import { ServiceFactory } from '../services/ServiceFactory';
 
 export class PersonaController {
-  private service: PersonaService;
+    private service!: PersonaService;
 
-  constructor() {
-    this.service = new PersonaService();
-  }
-
-  // Browse: Listar personas (datos resumidos)
-  getPersonas = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const resultado = await this.service.getPersonasResumidas();
-      res.status(200).json(resultado);
-    } catch (error) {
-      res.status(500).json({ error: "Error interno del servidor" });
+    constructor() {
+        this.service = ServiceFactory.personaService() as PersonaService;
     }
-  };
 
-  // Read: Obtener persona por ID (datos completos)
-  getById = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser un número válido' });
-        return;
-      }
+    getPersonas = async (req: Request, res: Response): Promise<void> => {
+        const resultado = await this.service.getPersonasResumidas();
+        res.status(200).json(resultado);
+    };
 
-      const persona = await this.service.getPersonaById(id);
-      
-      persona ? res.status(200).json(persona)
-              : res.status(404).json({ message: 'Persona no encontrada' });
-    } catch (error) {
-      console.error('Error en PersonaController:', error);
-      res.status(500).json({ error: 'Error interno al obtener la persona' });
-    }
-  };
+    getById = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const persona = await this.service.getById(id);
+        persona ? res.status(200).json(persona)
+            : res.status(404).json({ message: 'Persona no encontrada' });
+    };
 
-  // Edit: Actualización parcial
-  update = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser un número válido' });
-        return;
-      }
+    update = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const personaActualizada = await this.service.update(id, req.body);
+        if (!personaActualizada) {
+            res.status(404).json({ message: 'Persona no encontrada' });
+            return;
+        }
+        res.status(201).json(personaActualizada);
+    };
 
-      const personaActualizada = await this.service.updatePersona(id, req.body);
-      
-      if (!personaActualizada) {
-        res.status(404).json({ message: 'Persona no encontrada' });
-        return;
-      }
+    create = async (req: Request, res: Response): Promise<void> => {
+        const nuevaPersona = await this.service.create(req.body);
+        res.status(200).json({ id: nuevaPersona._id });
+    };
 
-      res.status(201).json(personaActualizada);
-    } catch (error) {
-      res.status(400).json({ 
-        error: 'Error en los datos proporcionados',
-        details: error instanceof Error ? error.message : error
-      });
-    }
-  };
-
-  // Add: Crear nueva entidad
-  create = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const nuevaPersona = await this.service.createPersona(req.body);
-      res.status(200).json({ id: nuevaPersona.id });
-    } catch (error) {
-      res.status(400).json({ 
-        error: 'Error en los datos proporcionados',
-        details: error instanceof Error ? error.message : error
-      });
-    }
-  };
-
-  // Delete: Eliminar entidad
-  delete = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser un número válido' });
-        return;
-      }
-
-      const eliminado = await this.service.deletePersona(id);
-      
-      if (!eliminado) {
-        res.status(404).json({ message: 'Persona no encontrada' });
-        return;
-      }
-
-      res.status(201).end();
-    } catch (error) {
-      res.status(500).json({ error: 'Error interno al eliminar la persona' });
-    }
-  };
+    delete = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const eliminado = await this.service.delete(id);
+        if (!eliminado) {
+            res.status(404).json({ message: 'Persona no encontrada' });
+            return;
+        }
+        res.status(204).end(); 
+    };
 }

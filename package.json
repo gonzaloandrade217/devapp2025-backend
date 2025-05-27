@@ -24,13 +24,18 @@
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "typescript-eslint": "^8.28.0"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "helmet": "^8.1.0"
+    "express-async-errors": "^3.1.1",
+    "helmet": "^8.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0",
+    "temporal-polyfill": "^0.3.0",
+    "zod": "^3.24.4"
   }
 }

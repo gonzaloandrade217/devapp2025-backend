@@ -1,14 +1,18 @@
 import { Router } from "express";
 import { AutoController } from "../controllers/auto.controller";
 
-const router = Router();
-const controller = new AutoController();
+const createAutosRoutes = (): Router => { 
+  const router = Router();
+  const controller = new AutoController(); 
 
-// BREAD Routes para Autos
-router.get("/", controller.getAutos);          // Browse (Listar todos)
-router.get("/:id", controller.getById);        // Read (Obtener por ID)
-router.post("/", controller.create);           // Add (Crear)
-router.put("/:id", controller.update);         // Edit (Actualizar)
-router.delete("/:id", controller.delete);      // Delete (Eliminar)
+  // BREAD Routes para Autos
+  router.get("/", controller.getAutos.bind(controller));
+  router.get("/:id", controller.getById.bind(controller));
+  router.post("/", controller.create.bind(controller));
+  router.put("/:id", controller.update.bind(controller));
+  router.delete("/:id", controller.delete.bind(controller));
 
-export default router;
+  return router;
+};
+
+export default createAutosRoutes;

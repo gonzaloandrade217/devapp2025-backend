@@ -1,51 +1,53 @@
-import { Persona } from "../interfaces/persona.interface";
-import { PersonaRepository } from "../repositories/persona.repository";
+import { WithId } from "mongodb";
+import { Persona } from "../models/persona";
+import { IService } from "./IService";
+import { IRepository } from '../repositories/IRepository';
 
-export class PersonaService {
-  private repository = new PersonaRepository();
+export class PersonaService implements IService<Persona> {
+    private repository!: IRepository<Persona>;
 
-  // Browse
-  async getPersonasResumidas() {
-    const personas = await this.repository.getAll();
-    return personas.map(p => ({
-      id: p.id,
-      nombre: p.nombre,
-      apellido: p.apellido,
-      dni: p.dni
-    }));
-  }
-
-  // Read
-  async getPersonaById(id: number): Promise<Persona | null> {
-    return this.repository.getById(id);
-  }
-
-  // Edit: Actualización parcial
-  async updatePersona(id: number, personaData: Partial<Persona>): Promise<Persona | null> {
-    // Validación adicional de datos
-    if (personaData.dni && !this.validarDNI(personaData.dni)) {
-      throw new Error('Formato de DNI inválido');
+    constructor(personaRepository: IRepository<Persona>) {
+        this.repository = personaRepository;
     }
-    
-    return this.repository.update(id, personaData);
-  }
 
-  // Add: Crear nueva entidad
-  async createPersona(personaData: Omit<Persona, 'id'>): Promise<Persona> {
-    // Validación de campos obligatorios
-    if (!personaData.nombre || !personaData.dni) {
-      throw new Error('Nombre y DNI son campos obligatorios');
+    public async getAll(): Promise<WithId<Persona>[]> {
+        const personas = await this.repository.getAll();
+        return personas;
     }
-    
-    return this.repository.create(personaData);
-  }
 
-  // Delete: Eliminar entidad
-  async deletePersona(id: number): Promise<boolean> {
-    return this.repository.delete(id);
-  }
+    public async getById(id: string): Promise<WithId<Persona> | null> {
+        return this.repository.getById(id);
+    }
 
-  private validarDNI(dni: string): boolean {
-    return /^\d{7,8}$/.test(dni);
-  }
+    public async create(personaData: Omit<Persona, '_id' | 'id'>): Promise<WithId<Persona>> {
+        if (!personaData.nombre || !personaData.dni) {
+            throw new Error('Nombre y DNI son campos obligatorios');
+        }
+        return this.repository.create(personaData);
+    }
+
+    public async update(id: string, personaData: Partial<Persona>): Promise<WithId<Persona> | null> {
+        if (personaData.dni && !this.validarDNI(personaData.dni)) {
+            throw new Error('Formato de DNI inválido');
+        }
+        return this.repository.update(id, personaData);
+    }
+
+    public async delete(id: string): Promise<boolean> {
+        return this.repository.delete(id);
+    }
+
+    public async getPersonasResumidas(): Promise<{ id: string; nombre: string; apellido: string; dni: string; }[]> {
+        const personas = await this.repository.getAll();
+        return personas.map(p => ({
+            id: p._id.toHexString(),
+            nombre: p.nombre,
+            apellido: p.apellido,
+            dni: p.dni
+        }));
+    }
+
+    private validarDNI(dni: string): boolean {
+        return /^\d{7,8}$/.test(dni);
+    }
 }

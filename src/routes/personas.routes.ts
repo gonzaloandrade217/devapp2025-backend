@@ -1,14 +1,18 @@
 import { Router } from 'express';
 import { PersonaController } from '../controllers/persona.controller';
 
-const router = Router();
-const controller = new PersonaController();
+const createPersonasRoutes = (): Router => { 
+  const router = Router();
+  const controller = new PersonaController(); 
 
-// BREAD Routes
-router.get("/", controller.getPersonas);         // Browse
-router.get("/:id", controller.getById);          // Read
-router.post("/", controller.create);             // Add
-router.put("/:id", controller.update);           // Edit
-router.delete("/:id", controller.delete);        // Delete
+  // BREAD Routes
+  router.get("/", controller.getPersonas.bind(controller)); 
+  router.get("/:id", controller.getById.bind(controller));
+  router.post("/", controller.create.bind(controller));
+  router.put("/:id", controller.update.bind(controller));
+  router.delete("/:id", controller.delete.bind(controller));
 
-export default router;
+  return router;
+};
+
+export default createPersonasRoutes;

@@ -1,51 +1,39 @@
-import { Auto } from "../interfaces/auto.interface";
-import { AutoRepository } from "../repositories/auto.repository";
-import { PersonaRepository } from "../repositories/persona.repository";
+import { Auto } from "../models/auto";
+import { WithId } from "mongodb";
+import { IService } from "./IService";
+import { IRepository } from '../repositories/IRepository'; 
+import { Persona } from "../models";
 
-export class AutoService {
-  private autoRepository = new AutoRepository();
-  private personaRepository = new PersonaRepository();
-
-  async getAutos(personaId?: number): Promise<Auto[]> {
-    const autos = personaId 
-      ? await this.autoRepository.getByPersonaId(personaId)
-      : await this.autoRepository.getAll();
+export class AutoService implements IService<Auto> {
     
-    return autos;
-  }
+    private autoRepository!: IRepository<Auto>;
+    private personaRepository!: IRepository<Persona>;
 
-  async getAutoById(id: number): Promise<Auto | null> {
-    return this.autoRepository.getById(id);
-  }
-
-  async createAuto(personaId: number, autoData: Omit<Auto, 'id'>): Promise<Auto> {
-    // Validar que la persona exista
-    const persona = await this.personaRepository.getById(personaId);
-    if (!persona) {
-      throw new Error('La persona no existe');
+    constructor(autoRepository: IRepository<Auto>, personaRepository: IRepository<Persona>) {
+        this.autoRepository = autoRepository;
+        this.personaRepository = personaRepository;
+    }
+    getAll(): Promise<WithId<Auto>[]> {
+        throw new Error("Method not implemented.");
+    }
+    getById(id: string): Promise<WithId<Auto> | null> {
+        throw new Error("Method not implemented.");
+    }
+    create(data: Omit<Auto, "_id" | "id">): Promise<WithId<Auto>> {
+        throw new Error("Method not implemented.");
+    }
+    update(id: string, data: Partial<Auto>): Promise<WithId<Auto> | null> {
+        throw new Error("Method not implemented.");
+    }
+    delete(id: string): Promise<boolean> {
+        throw new Error("Method not implemented.");
     }
 
-    // Validar datos mínimos
-    if (!autoData.patente) {
-      throw new Error('La patente es requerida');
-    }
-
-    return this.autoRepository.create({
-      ...autoData,
-      personaId
-    });
-  }
-
-  async updateAuto(id: number, autoData: Partial<Auto>): Promise<Auto | null> {
-    // Validar que no se intente cambiar el personaId
-    if (autoData.personaId) {
-      throw new Error('No se puede cambiar el dueño del auto');
-    }
-
-    return this.autoRepository.update(id, autoData);
-  }
-
-  async deleteAuto(id: number): Promise<boolean> {
-    return this.autoRepository.delete(id);
-  }
+    public getAutosByPersonaId = async (personaId: string): Promise<WithId<Auto>[]> => {
+        if ('getByPersonaId' in this.autoRepository && typeof this.autoRepository.getByPersonaId === 'function') {
+            return await this.autoRepository.getByPersonaId(personaId);
+        } else {
+            throw new Error("El método 'getByPersonaId' no está implementado en este tipo de repositorio.");
+        }
+    };
 }

@@ -1,117 +1,52 @@
 import { Request, Response } from 'express';
 import { AutoService } from "../services/auto.service";
+import { ServiceFactory } from '../services/ServiceFactory';
+import { Auto } from '../models/auto';
 
 export class AutoController {
-  private service = new AutoService();
+    private service: AutoService;
 
-  // Browse: Listar autos 
-  getAutos = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const personaId = req.query.personaId 
-        ? Number(req.query.personaId) 
-        : undefined;
-
-      if (personaId !== undefined && isNaN(personaId)) {
-        res.status(400).json({ error: 'personaId debe ser numérico' });
-        return;
-      }
-
-      const autos = await this.service.getAutos(personaId);
-      res.status(200).json(autos);
-    } catch (error) {
-      console.error('Error en getAutos:', error);
-      res.status(500).json({ error: 'Error al obtener autos' });
+    constructor() {
+        this.service = ServiceFactory.autoService() as AutoService;
     }
-  };
 
-  // Read: Obtener auto por ID
-  getById = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser numérico' });
-        return;
-      }
+    public getAutos = async (req: Request, res: Response): Promise<void> => {
+        const personaId = req.query.personaId as string | undefined;
+        let autos;
 
-      const auto = await this.service.getAutoById(id);
-      
-      auto ? res.status(200).json(auto)
-           : res.status(404).json({ message: 'Auto no encontrado' });
-    } catch (error) {
-      console.error('Error en getById:', error);
-      res.status(500).json({ error: 'Error al obtener auto' });
-    }
-  };
+        if (personaId) {
+            autos = await this.service.getAutosByPersonaId(personaId);
+        } else {
+            autos = await this.service.getAll();
+        }
+        res.status(200).json(autos);
+    };
 
-  // Add: Crear nuevo auto
-  create = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const { personaId, ...autoData } = req.body;
-      
-      if (!personaId) {
-        res.status(400).json({ error: 'personaId es requerido' });
-        return;
-      }
+    public getById = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const auto = await this.service.getById(id);
+        auto ? res.status(200).json(auto)
+             : res.status(404).json({ message: 'Auto no encontrado' });
+    };
 
-      const personaIdNum = Number(personaId);
-      if (isNaN(personaIdNum)) {
-        res.status(400).json({ error: 'personaId debe ser numérico' });
-        return;
-      }
+    public create = async (req: Request, res: Response): Promise<void> => {
+        const autoData: Omit<Auto, '_id'> = req.body;
+        const nuevoAuto = await this.service.create(autoData);
+        res.status(201).json(nuevoAuto); 
+    };
 
-      const nuevoAuto = await this.service.createAuto(personaIdNum, autoData);
-      res.status(200).json(nuevoAuto);
-    } catch (error) {
-      console.error('Error en create:', error);
-      res.status(400).json({ 
-        error: 'Error al crear auto',
-        details: error instanceof Error ? error.message : String(error)
-      });
-    }
-  };
+    public update = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const autoData: Partial<Auto> = req.body;
+        const autoActualizado = await this.service.update(id, autoData);
+        autoActualizado ? res.status(200).json(autoActualizado)
+                        : res.status(404).json({ message: 'Auto no encontrado' });
+    };
 
-  // Edit: Actualizar auto
-  update = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      const autoData = req.body;
-
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser numérico' });
-        return;
-      }
-
-      const autoActualizado = await this.service.updateAuto(id, autoData);
-      
-      autoActualizado ? res.status(200).json(autoActualizado)
-                     : res.status(404).json({ message: 'Auto no encontrado' });
-    } catch (error) {
-      console.error('Error en update:', error);
-      res.status(400).json({ 
-        error: 'Error al actualizar auto',
-        details: error instanceof Error ? error.message : String(error)
-      });
-    }
-  };
-
-  // Delete: Eliminar auto
-  delete = async (req: Request, res: Response): Promise<void> => {
-    try {
-      const id = Number(req.params.id);
-      
-      if (isNaN(id)) {
-        res.status(400).json({ error: 'ID debe ser numérico' });
-        return;
-      }
-
-      const eliminado = await this.service.deleteAuto(id);
-      
-      eliminado ? res.status(200).json({ message: 'Auto eliminado' })
-               : res.status(404).json({ message: 'Auto no encontrado' });
-    } catch (error) {
-      console.error('Error en delete:', error);
-      res.status(500).json({ error: 'Error al eliminar auto' });
-    }
-  };
+    public delete = async (req: Request, res: Response): Promise<void> => {
+        const id = req.params.id;
+        const eliminado = await this.service.delete(id);
+        eliminado ? res.status(204).end() 
+                  : res.status(404).json({ message: 'Auto no encontrado' });
+    };
 }
