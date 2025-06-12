@@ -4,21 +4,21 @@ import { PersonaService } from './persona.service';
 import { Auto } from '../models/auto';
 import { Persona } from '../models/persona';
 import { IService } from './IService';
-
 import { AutoMongoRepository } from '../repositories/mongo/auto.repository';
 import { PersonaMongoRepository } from '../repositories/mongo/persona.repository';
-
 import { AutoTransientRepository } from '../repositories/transient/auto.repository';
 import { PersonaTransientRepository } from '../repositories/transient/persona.repository';
-
-type AutoRepoType = AutoMongoRepository | AutoTransientRepository;
-type PersonaRepoType = PersonaMongoRepository | PersonaTransientRepository;
+import { AutoController } from '../controllers/auto.controller';
+import { PersonaController } from '../controllers/persona.controller';
 
 
 export class ServiceFactory {
     private static _dbInstance: Db | undefined;
     private static _autoServiceInstance: AutoService | undefined;
     private static _personaServiceInstance: PersonaService | undefined;
+    private static _autoControllerInstance: AutoController | undefined;
+    private static _personaControllerInstance: PersonaController | undefined;
+
 
     public static initialize(db?: Db): void {
         ServiceFactory._dbInstance = db;
@@ -30,11 +30,10 @@ export class ServiceFactory {
         }
         return ServiceFactory._dbInstance;
     }
-
-    public static autoService(): IService<Auto> {
+    public static autoService(): AutoService {
         if (!ServiceFactory._autoServiceInstance) {
             let autoRepo;
-            let personaRepo;
+            let personaRepo; 
 
             if (process.env.DB_TYPE === 'transient') {
                 autoRepo = new AutoTransientRepository();
@@ -49,7 +48,7 @@ export class ServiceFactory {
         return ServiceFactory._autoServiceInstance;
     }
 
-    public static personaService(): IService<Persona> {
+    public static personaService(): PersonaService {
         if (!ServiceFactory._personaServiceInstance) {
             let personaRepo; 
 
@@ -62,5 +61,19 @@ export class ServiceFactory {
             ServiceFactory._personaServiceInstance = new PersonaService(personaRepo);
         }
         return ServiceFactory._personaServiceInstance;
+    }
+
+    public static getAutoController(): AutoController {
+        if (!ServiceFactory._autoControllerInstance) {
+            ServiceFactory._autoControllerInstance = new AutoController(ServiceFactory.autoService());
+        }
+        return ServiceFactory._autoControllerInstance;
+    }
+
+    public static getPersonaController(): PersonaController {
+        if (!ServiceFactory._personaControllerInstance) {
+            ServiceFactory._personaControllerInstance = new PersonaController(ServiceFactory.personaService());
+        }
+        return ServiceFactory._personaControllerInstance;
     }
 }

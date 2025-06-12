@@ -1,4 +1,4 @@
-import { Db } from 'mongodb';
+import { Db, ObjectId } from 'mongodb'; 
 import { AbstractMongoRepository } from './abstract.repository'; 
 import { Persona } from '../../models/persona'; 
 
@@ -12,10 +12,9 @@ export class PersonaMongoRepository extends AbstractMongoRepository<Persona> {
     async isDniUnique(dni: string, idToIgnore?: string): Promise<boolean> {
         const query: any = { dni: dni };
         if (idToIgnore) {
-            query._id = { $ne: idToIgnore };
+            query._id = { $ne: new ObjectId(idToIgnore) }; 
         }
-        const count = await this.getCollection().countDocuments(query);
+        const count = await this.getCollectionInstance().countDocuments(query);
         return count === 0;
     }
-
 }

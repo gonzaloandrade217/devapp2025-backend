@@ -1,5 +1,5 @@
 import { WithId } from "mongodb";
-import { Persona } from "../models/persona";
+import { Persona } from "../models/persona"; 
 import { IService } from "./IService";
 import { IRepository } from '../repositories/IRepository';
 
@@ -23,27 +23,66 @@ export class PersonaService implements IService<Persona> {
         if (!personaData.nombre || !personaData.dni) {
             throw new Error('Nombre y DNI son campos obligatorios');
         }
-        return this.repository.create(personaData);
+        
+        const dataToCreate: Omit<Persona, '_id' | 'id'> = { ...personaData };
+        
+        if ('fechaNacimiento' in dataToCreate && typeof dataToCreate.fechaNacimiento === 'string' && !isNaN(new Date(dataToCreate.fechaNacimiento).getTime())) {
+            dataToCreate.fechaNacimiento = new Date(dataToCreate.fechaNacimiento) as any; 
+            console.log("Service: CONVERSIÓN DE FECHA (CREATE) APLICADA. Fecha después de conversión:", dataToCreate.fechaNacimiento);
+        } else {
+            console.log("Service: CONVERSIÓN DE FECHA (CREATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToCreate.fechaDeNacimiento, dataToCreate.fechaDeNacimiento);
+        }
+
+        return this.repository.create(dataToCreate);
     }
 
     public async update(id: string, personaData: Partial<Persona>): Promise<WithId<Persona> | null> {
         if (personaData.dni && !this.validarDNI(personaData.dni)) {
             throw new Error('Formato de DNI inválido');
         }
-        return this.repository.update(id, personaData);
+
+        const dataToUpdate: Partial<Persona> = { ...personaData };
+
+        if ('fechaNacimiento' in dataToUpdate && typeof dataToUpdate.fechaNacimiento === 'string' && !isNaN(new Date(dataToUpdate.fechaNacimiento).getTime())) {
+            dataToUpdate.fechaNacimiento = new Date(dataToUpdate.fechaNacimiento) as any; 
+            console.log("Service: CONVERSIÓN DE FECHA (UPDATE) APLICADA. Fecha después de conversión:", dataToUpdate.fechaNacimiento);
+        } else {
+            console.log("Service: CONVERSIÓN DE FECHA (UPDATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToUpdate.fechaDeNacimiento, dataToUpdate.fechaDeNacimiento);
+        }
+        
+        console.log("Service: Intentando actualizar Persona con ID:", id);
+        console.log("Service: Datos que se enviarán al repositorio (con fecha potencialmente convertida):", dataToUpdate);
+
+        const updated = await this.repository.update(id, dataToUpdate);
+        console.log("persona updated", updated);
+        if (!updated) {
+            console.log("Service: Repositorio no pudo actualizar/encontrar la Persona.");
+            return null;
+        } 
+        console.log("Service: Repositorio actualizó Persona:", updated._id);
+        return updated;
     }
 
     public async delete(id: string): Promise<boolean> {
         return this.repository.delete(id);
     }
 
-    public async getPersonasResumidas(): Promise<{ id: string; nombre: string; apellido: string; dni: string; }[]> {
+    public async getPersonasResumidas(): Promise<{
+        id: string;
+        nombre: string;
+        apellido: string;
+        dni: string;
+        genero: string;
+        donanteOrganos: boolean
+    }[]> {
         const personas = await this.repository.getAll();
         return personas.map(p => ({
             id: p._id.toHexString(),
             nombre: p.nombre,
             apellido: p.apellido,
-            dni: p.dni
+            dni: p.dni,
+            genero: p.genero,
+            donanteOrganos: p.donanteOrganos
         }));
     }
 

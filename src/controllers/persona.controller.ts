@@ -5,7 +5,7 @@ import { ServiceFactory } from '../services/ServiceFactory';
 export class PersonaController {
     private service!: PersonaService;
 
-    constructor() {
+    constructor(private personaService: PersonaService) {
         this.service = ServiceFactory.personaService() as PersonaService;
     }
 
@@ -22,14 +22,22 @@ export class PersonaController {
     };
 
     update = async (req: Request, res: Response): Promise<void> => {
-        const id = req.params.id;
-        const personaActualizada = await this.service.update(id, req.body);
-        if (!personaActualizada) {
-            res.status(404).json({ message: 'Persona no encontrada' });
-            return;
-        }
-        res.status(201).json(personaActualizada);
-    };
+    const id = req.params.id;
+    const personaActualizadaData = req.body;
+
+    console.log("Controller: Recibiendo PUT para ID:", id);
+    console.log("Controller: Datos recibidos para actualizar:", personaActualizadaData);
+
+    const personaActualizada = await this.service.update(id, personaActualizadaData);
+    console.log("Persona actualizada", personaActualizada);
+    if (!personaActualizada) {
+        console.log("Controller: Persona no encontrada para actualizar, devolviendo 404.");
+        res.status(404).json({ message: 'Persona no encontrada' });
+        return;
+    }
+    console.log("Controller: Persona actualizada con éxito:", personaActualizada);
+    res.status(201).json(personaActualizada);
+};
 
     create = async (req: Request, res: Response): Promise<void> => {
         const nuevaPersona = await this.service.create(req.body);

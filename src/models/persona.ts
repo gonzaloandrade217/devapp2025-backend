@@ -7,13 +7,13 @@ import zod from 'zod';
 export type Genero = 'masculino' | 'femenino' | 'no binario';
 
 export type Persona = {
-    dni:             string;
-    nombre:          string;
-    apellido:        string;
+    dni: string;
+    nombre: string;
+    apellido: string;
     fechaDeNacimiento: Temporal.PlainDate;
-    genero:          Genero;
-    esDonanteOrganos:  boolean;
-    autos:           UUID[];
+    genero: Genero;
+    donanteOrganos: boolean;
+    autos: UUID[];
 };
 
 const personaSchema = zod.object({
@@ -32,25 +32,23 @@ const personaSchema = zod.object({
             return new Temporal.PlainDate(year, month, day);
         }),
     genero: zod.enum(['masculino', 'femenino', 'no binario']),
-    esDonanteDeOrganos: zod.boolean(),
+    donanteOrganos: zod.boolean(),
     autos: zod.optional(zod.array(zod.string()))
 });
 
-// Creamos un tipo inferido desde el esquema de Zod
 export type ValidatedPersonaInput = zod.infer<typeof personaSchema>;
 
 export const validatedPersona = (entity: ValidatedPersonaInput): Validation<Persona> => {
     const result = personaSchema.safeParse(entity);
     if (result.success) {
-        // Mapeamos el resultado validado a tu tipo Persona
         const persona: Persona = {
             dni: result.data.dni,
             nombre: result.data.nombre,
             apellido: result.data.apellido,
-            fechaDeNacimiento: result.data.fechaDeNacimiento, // Ya es Temporal.PlainDate
-            genero: result.data.genero as Genero, // Hacemos un type assertion a tu tipo Genero
-            esDonanteOrganos: result.data.esDonanteDeOrganos,
-            autos: (result.data.autos || []) as UUID[], // Aseguramos que autos sea un array de UUID
+            fechaDeNacimiento: result.data.fechaDeNacimiento,
+            genero: result.data.genero as Genero,
+            donanteOrganos: result.data.donanteOrganos,
+            autos: (result.data.autos || []) as UUID[],
         };
         return { success: true, data: persona };
     }

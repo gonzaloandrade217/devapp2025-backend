@@ -15,7 +15,7 @@ if (process.env.SEED_DATA === 'true') {
         apellido: 'Pérez',
         fechaDeNacimiento: new Temporal.PlainDate(1980, 4, 21),
         genero: 'masculino',
-        esDonanteOrganos: true,
+        donanteOrganos: true,
         autos: ['1', '2']
     };
 }

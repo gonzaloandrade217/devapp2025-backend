@@ -2,17 +2,18 @@ import { Request, Response } from 'express';
 import { AutoService } from "../services/auto.service";
 import { ServiceFactory } from '../services/ServiceFactory';
 import { Auto } from '../models/auto';
+import { WithId } from 'mongodb';
 
 export class AutoController {
     private service: AutoService;
 
-    constructor() {
+    constructor(private autoService: AutoService) {
         this.service = ServiceFactory.autoService() as AutoService;
     }
 
     public getAutos = async (req: Request, res: Response): Promise<void> => {
         const personaId = req.query.personaId as string | undefined;
-        let autos;
+        let autos: WithId<Auto>[];
 
         if (personaId) {
             autos = await this.service.getAutosByPersonaId(personaId);
@@ -48,5 +49,11 @@ export class AutoController {
         const eliminado = await this.service.delete(id);
         eliminado ? res.status(204).end() 
                   : res.status(404).json({ message: 'Auto no encontrado' });
+    };
+
+    public getAutosByPersonaId = async (req: Request, res: Response): Promise<void> => {
+        const { personaId } = req.params; 
+        const autos = await this.autoService.getAutosByPersonaId(personaId);
+        res.status(200).json(autos);
     };
 }
