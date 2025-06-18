@@ -21,7 +21,7 @@ export class AutoMongoRepository extends AbstractMongoRepository<Auto> {
 
     async getByPersonaId(personaId: string): Promise<WithId<Auto>[]> {
         try {
-            const result = await this.getCollectionInstance().find({ personaId: personaId }).toArray();
+            const result = await this.getCollectionInstance().find({ personaID: personaId }).toArray();
             return result as WithId<Auto>[]; 
         } catch (error) {
             console.error(`Error al obtener autos por persona ID ${personaId}:`, error);

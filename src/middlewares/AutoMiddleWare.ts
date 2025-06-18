@@ -21,7 +21,7 @@ export class AutoMiddleware extends BREADMiddleware<Auto, AutoListingDTO, Auto, 
       patente: auto.patente,
       marca: auto.marca,
       modelo: auto.modelo,
-      anho: auto.anho,
+      anio: auto.anio,
       color: auto.color,
     });
     // identity aquí también recibirá WithId<Auto>

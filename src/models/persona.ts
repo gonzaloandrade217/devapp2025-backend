@@ -1,8 +1,8 @@
-import { UUID } from './UUID';
 import { Temporal } from 'temporal-polyfill';
 import { Validation } from './validations';
 import { InvalidData } from './errors';
 import zod from 'zod';
+import { Auto } from './auto';
 
 export type Genero = 'masculino' | 'femenino' | 'no binario';
 
@@ -13,7 +13,7 @@ export type Persona = {
     fechaDeNacimiento: Temporal.PlainDate;
     genero: Genero;
     donanteOrganos: boolean;
-    autos: UUID[];
+    autos: Auto[];
 };
 
 const personaSchema = zod.object({
@@ -48,7 +48,7 @@ export const validatedPersona = (entity: ValidatedPersonaInput): Validation<Pers
             fechaDeNacimiento: result.data.fechaDeNacimiento,
             genero: result.data.genero as Genero,
             donanteOrganos: result.data.donanteOrganos,
-            autos: (result.data.autos || []) as UUID[],
+            autos: [],
         };
         return { success: true, data: persona };
     }

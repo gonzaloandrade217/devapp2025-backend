@@ -1,9 +1,6 @@
 import { Db } from 'mongodb';
 import { AutoService } from './auto.service';
 import { PersonaService } from './persona.service';
-import { Auto } from '../models/auto';
-import { Persona } from '../models/persona';
-import { IService } from './IService';
 import { AutoMongoRepository } from '../repositories/mongo/auto.repository';
 import { PersonaMongoRepository } from '../repositories/mongo/persona.repository';
 import { AutoTransientRepository } from '../repositories/transient/auto.repository';
@@ -30,6 +27,7 @@ export class ServiceFactory {
         }
         return ServiceFactory._dbInstance;
     }
+
     public static autoService(): AutoService {
         if (!ServiceFactory._autoServiceInstance) {
             let autoRepo;
@@ -37,13 +35,13 @@ export class ServiceFactory {
 
             if (process.env.DB_TYPE === 'transient') {
                 autoRepo = new AutoTransientRepository();
-                personaRepo = new PersonaTransientRepository();
+                personaRepo = new PersonaTransientRepository(); 
             } else {
                 const db = ServiceFactory.getDb();
                 autoRepo = new AutoMongoRepository(db);
-                personaRepo = new PersonaMongoRepository(db);
+                personaRepo = new PersonaMongoRepository(db); 
             }
-            ServiceFactory._autoServiceInstance = new AutoService(autoRepo, personaRepo);
+            ServiceFactory._autoServiceInstance = new AutoService(autoRepo, personaRepo); 
         }
         return ServiceFactory._autoServiceInstance;
     }
@@ -51,14 +49,18 @@ export class ServiceFactory {
     public static personaService(): PersonaService {
         if (!ServiceFactory._personaServiceInstance) {
             let personaRepo; 
+            let autoRepo; 
 
             if (process.env.DB_TYPE === 'transient') {
                 personaRepo = new PersonaTransientRepository();
+                autoRepo = new AutoTransientRepository(); 
             } else {
                 const db = ServiceFactory.getDb();
                 personaRepo = new PersonaMongoRepository(db);
+                autoRepo = new AutoMongoRepository(db); 
             }
-            ServiceFactory._personaServiceInstance = new PersonaService(personaRepo);
+            
+            ServiceFactory._personaServiceInstance = new PersonaService(personaRepo, autoRepo);
         }
         return ServiceFactory._personaServiceInstance;
     }

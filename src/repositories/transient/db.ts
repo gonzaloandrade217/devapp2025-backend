@@ -16,7 +16,7 @@ if (process.env.SEED_DATA === 'true') {
         fechaDeNacimiento: new Temporal.PlainDate(1980, 4, 21),
         genero: 'masculino',
         donanteOrganos: true,
-        autos: ['1', '2']
+        autos: []
     };
 }
 
