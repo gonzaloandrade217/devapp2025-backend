@@ -6,7 +6,7 @@ export class AutoTransientRepository extends AbstractTransientRepository<Auto> {
     constructor() {
         super(db.autos); 
     }
-    async getAutosByPersonaId(personaId: string): Promise<Auto[]> {
-        return db.all(this.collection).filter(auto => auto.personaID === personaId);
+    async getAutosByPersonaId(personaID: string): Promise<Auto[]> {
+        return db.all(this.collection).filter(auto => auto.personaID === personaID);
     }
 }

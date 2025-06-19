@@ -1,14 +1,14 @@
 import { WithId } from "mongodb";
-import { Persona } from "../models/persona"; 
+import { Persona } from "../models/persona";
 import { IService } from "./IService";
-import { IRepository } from '../repositories/IRepository'; 
-import { Auto } from '../models/auto'; 
+import { IRepository } from '../repositories/IRepository';
+import { Auto } from '../models/auto';
 
 export class PersonaService implements IService<Persona> {
-    private personaRepository: IRepository<Persona>; 
-    private autoRepository: IRepository<Auto>; 
+    private personaRepository: IRepository<Persona>;
+    private autoRepository: IRepository<Auto>;
 
-    constructor(personaRepository: IRepository<Persona>, autoRepository: IRepository<Auto>) { 
+    constructor(personaRepository: IRepository<Persona>, autoRepository: IRepository<Auto>) {
         this.personaRepository = personaRepository;
         this.autoRepository = autoRepository;
     }
@@ -22,44 +22,55 @@ export class PersonaService implements IService<Persona> {
         const personaDoc = await this.personaRepository.getById(id);
 
         if (!personaDoc) {
-            return null; 
+            return null;
         }
 
-        const personaIdString = personaDoc._id.toHexString(); 
+        const personaIdString = personaDoc._id.toHexString();
         let autosAsociados: Auto[] = [];
 
         try {
-            if (this.autoRepository.getByPersonaId) { 
+            if (this.autoRepository.getByPersonaId) {
                 const autosDocs = await this.autoRepository.getByPersonaId(personaIdString);
-                autosAsociados = autosDocs.map(auto => ({
-                    ...auto
-                })) as Auto[]; 
+
+                autosAsociados = autosDocs.map(autoDoc => {
+                    return {
+                        id: autoDoc._id.toHexString(),
+                        patente: autoDoc.patente,
+                        marca: autoDoc.marca,
+                        modelo: autoDoc.modelo,
+                        anio: autoDoc.anio,
+                        color: autoDoc.color,
+                        nroChasis: autoDoc.nroChasis,
+                        nroMotor: autoDoc.nroMotor,
+                        personaID: autoDoc.personaID,
+                    } as Auto;
+                });
             } else {
                 console.warn("PersonaService: El 'autoRepository' no tiene implementado 'getByPersonaId'. Asegúrese de que el repositorio de autos lo implemente.");
             }
 
         } catch (error) {
             console.error(`Error al obtener autos para persona ID ${personaIdString}:`, error);
-            autosAsociados = []; 
+            autosAsociados = [];
         }
 
-        const personaConAutos: WithId<Persona> = {
+        const personaFinal: WithId<Persona> = {
             ...personaDoc,
             autos: autosAsociados 
         };
 
-        return personaConAutos;
+        return personaFinal;
     }
 
     public async create(personaData: Omit<Persona, '_id' | 'id'>): Promise<WithId<Persona>> {
         if (!personaData.nombre || !personaData.dni) {
             throw new Error('Nombre y DNI son campos obligatorios');
         }
-        
+
         const dataToCreate: Omit<Persona, '_id' | 'id'> = { ...personaData };
-        
+
         if ('fechaNacimiento' in dataToCreate && typeof dataToCreate.fechaNacimiento === 'string' && !isNaN(new Date(dataToCreate.fechaNacimiento).getTime())) {
-            dataToCreate.fechaNacimiento = new Date(dataToCreate.fechaNacimiento) as any; 
+            dataToCreate.fechaNacimiento = new Date(dataToCreate.fechaNacimiento) as any;
             console.log("Service: CONVERSIÓN DE FECHA (CREATE) APLICADA. Fecha después de conversión:", dataToCreate.fechaNacimiento);
         } else {
             console.log("Service: CONVERSIÓN DE FECHA (CREATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToCreate.fechaDeNacimiento, dataToCreate.fechaDeNacimiento);
@@ -69,7 +80,7 @@ export class PersonaService implements IService<Persona> {
 
         const personaWithEmptyAutos: WithId<Persona> = {
             ...createdPersona,
-            autos: [] 
+            autos: []
         };
         return personaWithEmptyAutos;
     }
@@ -82,12 +93,12 @@ export class PersonaService implements IService<Persona> {
         const dataToUpdate: Partial<Persona> = { ...personaData };
 
         if ('fechaNacimiento' in dataToUpdate && typeof dataToUpdate.fechaNacimiento === 'string' && !isNaN(new Date(dataToUpdate.fechaNacimiento).getTime())) {
-            dataToUpdate.fechaNacimiento = new Date(dataToUpdate.fechaNacimiento) as any; 
+            dataToUpdate.fechaNacimiento = new Date(dataToUpdate.fechaNacimiento) as any;
             console.log("Service: CONVERSIÓN DE FECHA (UPDATE) APLICADA. Fecha después de conversión:", dataToUpdate.fechaNacimiento);
         } else {
             console.log("Service: CONVERSIÓN DE FECHA (UPDATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToUpdate.fechaDeNacimiento, dataToUpdate.fechaDeNacimiento);
         }
-        
+
         console.log("Service: Intentando actualizar Persona con ID:", id);
         console.log("Service: Datos que se enviarán al repositorio (con fecha potencialmente convertida):", dataToUpdate);
 
@@ -96,14 +107,14 @@ export class PersonaService implements IService<Persona> {
         if (!updated) {
             console.log("Service: Repositorio no pudo actualizar/encontrar la Persona.");
             return null;
-        } 
+        }
         console.log("Service: Repositorio actualizó Persona:", updated._id);
-        
+
         const personaIdString = updated._id.toHexString();
         let autosAsociados: Auto[] = [];
         try {
             if (this.autoRepository.getByPersonaId) {
-                autosAsociados = (await this.autoRepository.getByPersonaId(personaIdString)).map(auto => ({...auto})) as Auto[];
+                autosAsociados = (await this.autoRepository.getByPersonaId(personaIdString)).map(auto => ({ ...auto })) as Auto[];
             } else {
                 console.warn("PersonaService: El 'autoRepository' no tiene implementado 'getByPersonaId' durante la actualización.");
             }

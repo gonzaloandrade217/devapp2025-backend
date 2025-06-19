@@ -34,7 +34,7 @@ export class AutoService implements IService<Auto> {
         return await this.autoRepository.delete(id);
     }
 
-    public getAutosByPersonaId = async (personaId: string): Promise<WithId<Auto>[]> => {
-        return await this.autoRepository.getByPersonaId!(personaId);
+    public getAutosByPersonaId = async (personaID: string): Promise<WithId<Auto>[]> => {
+        return await this.autoRepository.getByPersonaId!(personaID);
     };
 }

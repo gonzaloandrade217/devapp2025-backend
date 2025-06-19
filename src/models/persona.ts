@@ -2,11 +2,12 @@ import { Temporal } from 'temporal-polyfill';
 import { Validation } from './validations';
 import { InvalidData } from './errors';
 import zod from 'zod';
-import { Auto } from './auto';
+import { autoSchema, Auto } from './auto';
 
 export type Genero = 'masculino' | 'femenino' | 'no binario';
 
 export type Persona = {
+    id: string;
     dni: string;
     nombre: string;
     apellido: string;
@@ -33,7 +34,7 @@ const personaSchema = zod.object({
         }),
     genero: zod.enum(['masculino', 'femenino', 'no binario']),
     donanteOrganos: zod.boolean(),
-    autos: zod.optional(zod.array(zod.string()))
+    autos: zod.optional(zod.array(autoSchema))
 });
 
 export type ValidatedPersonaInput = zod.infer<typeof personaSchema>;
@@ -42,13 +43,14 @@ export const validatedPersona = (entity: ValidatedPersonaInput): Validation<Pers
     const result = personaSchema.safeParse(entity);
     if (result.success) {
         const persona: Persona = {
+            id: '', 
             dni: result.data.dni,
             nombre: result.data.nombre,
             apellido: result.data.apellido,
             fechaDeNacimiento: result.data.fechaDeNacimiento,
             genero: result.data.genero as Genero,
             donanteOrganos: result.data.donanteOrganos,
-            autos: [],
+            autos: result.data.autos || [], 
         };
         return { success: true, data: persona };
     }

@@ -12,11 +12,11 @@ export class AutoController {
     }
 
     public getAutos = async (req: Request, res: Response): Promise<void> => {
-        const personaId = req.query.personaId as string | undefined;
+        const personaID = req.query.personaID as string | undefined;
         let autos: WithId<Auto>[];
 
-        if (personaId) {
-            autos = await this.service.getAutosByPersonaId(personaId);
+        if (personaID) {
+            autos = await this.service.getAutosByPersonaId(personaID);
         } else {
             autos = await this.service.getAll();
         }
@@ -52,8 +52,8 @@ export class AutoController {
     };
 
     public getAutosByPersonaId = async (req: Request, res: Response): Promise<void> => {
-        const { personaId } = req.params; 
-        const autos = await this.autoService.getAutosByPersonaId(personaId);
+        const { personaID } = req.params; 
+        const autos = await this.autoService.getAutosByPersonaId(personaID);
         res.status(200).json(autos);
     };
 }

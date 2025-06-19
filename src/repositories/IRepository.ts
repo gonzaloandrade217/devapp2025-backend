@@ -6,5 +6,5 @@ export interface IRepository<T> {
     create(data: Omit<T, '_id' | 'id'>): Promise<WithId<T>>;
     update(id: string, data: Partial<T>): Promise<WithId<T> | null>;
     delete(id: string): Promise<boolean>;
-    getByPersonaId?(personaId: string): Promise<WithId<T>[]>; 
+    getByPersonaId?(personaID: string): Promise<WithId<T>[]>; 
 }

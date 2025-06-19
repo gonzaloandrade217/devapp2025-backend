@@ -10,6 +10,7 @@ const autos: Record<UUID, WithTransientId<Auto>> = {};
 if (process.env.SEED_DATA === 'true') {
     personas['1'] = {
         _id: '1', 
+        id: '1',
         dni: '123456789',
         nombre: 'Juan',
         apellido: 'Pérez',

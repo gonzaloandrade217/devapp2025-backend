@@ -19,12 +19,12 @@ export class AutoMongoRepository extends AbstractMongoRepository<Auto> {
         }
     }
 
-    async getByPersonaId(personaId: string): Promise<WithId<Auto>[]> {
+    async getByPersonaId(personaID: string): Promise<WithId<Auto>[]> {
         try {
-            const result = await this.getCollectionInstance().find({ personaID: personaId }).toArray();
+            const result = await this.getCollectionInstance().find({ personaID: personaID }).toArray();
             return result as WithId<Auto>[]; 
         } catch (error) {
-            console.error(`Error al obtener autos por persona ID ${personaId}:`, error);
+            console.error(`Error al obtener autos por persona ID ${personaID}:`, error);
             return [];
         }
     }

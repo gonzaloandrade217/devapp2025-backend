@@ -10,7 +10,7 @@ export default (autoController: AutoController) => {
   router.put('/:id', autoController.update);
   router.delete('/:id', autoController.delete);
   router.get('/:id', autoController.getById);
-  router.get('/byPersona/:personaId', autoController.getAutosByPersonaId); 
+  router.get('/byPersona/:personaID', autoController.getAutosByPersonaId); 
 
   return router;
 };
