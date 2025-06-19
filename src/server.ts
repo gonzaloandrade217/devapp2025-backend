@@ -5,12 +5,14 @@ import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import process from 'process';
 import createPersonasRoutes from './routes/personas.routes'; 
-import createAutosRoutes from './routes/autos.routes';    
+import createAutosRoutes from './routes/autos.routes';
 import 'dotenv/config';
 import { MongoClient, Db } from 'mongodb'; 
 import { ServiceFactory } from './services/ServiceFactory'; 
 import { AutoController } from './controllers/auto.controller';
 import { PersonaController } from './controllers/persona.controller'; 
+import logger from './config/logger';
+import { ErrorCatching } from './middlewares/ErrorCatching';
 
 // Creamos nuestra app express
 const app = express();
@@ -39,7 +41,7 @@ interface Saludo {
 app.post('/login',(req, res) => {
     const loginData:LoginData = req.body;
 
-    console.log(`User: ${loginData.email}`);
+    logger.info(`User: ${loginData.email}`);
 
     const saludoRespuesta:Saludo = {
         destinatario: loginData.email,
@@ -51,13 +53,7 @@ app.post('/login',(req, res) => {
     res.json(saludoRespuesta);
 });
 
-app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.error('Error atrapado por el middleware de errores:', err.message);
-    res.status(500).json({
-        error: 'Algo salió mal en el servidor.',
-        details: process.env.NODE_ENV === 'development' ? err.message : undefined
-    });
-});
+app.use(ErrorCatching);
 
 async function connectToDatabaseAndSetupRoutes() {
     const uri = process.env.MONGO_URI || 'mongodb://localhost:27017';
@@ -70,13 +66,13 @@ async function connectToDatabaseAndSetupRoutes() {
         try {
             await client.connect();
             db = client.db(dbName);
-            console.log('Conectado a MongoDB.');
+            logger.info('Conectado a MongoDB.');
         } catch (error) {
-            console.error('Error al conectar a MongoDB:', error);
+            logger.error('Error al conectar a MongoDB:', error);
             process.exit(1);
         }
     } else {
-        console.log('Usando base de datos transitoria (en memoria). No se conectará a MongoDB.');
+        logger.info('Usando base de datos transitoria (en memoria). No se conectará a MongoDB.');
     }
 
     ServiceFactory.initialize(db);
@@ -91,7 +87,7 @@ async function connectToDatabaseAndSetupRoutes() {
     app.use('/api/autos', createAutosRoutes(autoController));
 
     app.listen(port, () => {
-        console.log(`Example app listening on port ${port}`);
+        logger.info(`Example app listening on port ${port}`);
     });
 }
 
