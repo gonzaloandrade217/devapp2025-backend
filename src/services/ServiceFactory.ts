@@ -1,13 +1,15 @@
-import { Db } from 'mongodb';
-import { AutoService } from './auto.service';
-import { PersonaService } from './persona.service';
+import { Db, ObjectId } from 'mongodb'; 
+import { AutoService } from '../services/auto.service';
+import { PersonaService } from '../services/persona.service';
 import { AutoMongoRepository } from '../repositories/mongo/auto.repository';
 import { PersonaMongoRepository } from '../repositories/mongo/persona.repository';
 import { AutoTransientRepository } from '../repositories/transient/auto.repository';
 import { PersonaTransientRepository } from '../repositories/transient/persona.repository';
 import { AutoController } from '../controllers/auto.controller';
 import { PersonaController } from '../controllers/persona.controller';
-
+import { IAutoRepository } from '../repositories/IAutoRepository';
+import { IRepository } from '../repositories/IRepository'; 
+import { Persona } from '../models/persona'; 
 
 export class ServiceFactory {
     private static _dbInstance: Db | undefined;
@@ -15,7 +17,6 @@ export class ServiceFactory {
     private static _personaServiceInstance: PersonaService | undefined;
     private static _autoControllerInstance: AutoController | undefined;
     private static _personaControllerInstance: PersonaController | undefined;
-
 
     public static initialize(db?: Db): void {
         ServiceFactory._dbInstance = db;
@@ -30,16 +31,16 @@ export class ServiceFactory {
 
     public static autoService(): AutoService {
         if (!ServiceFactory._autoServiceInstance) {
-            let autoRepo;
-            let personaRepo; 
+            let autoRepo: IAutoRepository<string> | IAutoRepository<ObjectId>;
+            let personaRepo: IRepository<Persona, string> | IRepository<Persona, ObjectId>; 
 
             if (process.env.DB_TYPE === 'transient') {
                 autoRepo = new AutoTransientRepository();
-                personaRepo = new PersonaTransientRepository(); 
+                personaRepo = new PersonaTransientRepository();
             } else {
                 const db = ServiceFactory.getDb();
                 autoRepo = new AutoMongoRepository(db);
-                personaRepo = new PersonaMongoRepository(db); 
+                personaRepo = new PersonaMongoRepository(db);
             }
             ServiceFactory._autoServiceInstance = new AutoService(autoRepo, personaRepo); 
         }
@@ -48,8 +49,8 @@ export class ServiceFactory {
 
     public static personaService(): PersonaService {
         if (!ServiceFactory._personaServiceInstance) {
-            let personaRepo; 
-            let autoRepo; 
+            let personaRepo: IRepository<Persona, string> | IRepository<Persona, ObjectId>; 
+            let autoRepo: IAutoRepository<string> | IAutoRepository<ObjectId>; 
 
             if (process.env.DB_TYPE === 'transient') {
                 personaRepo = new PersonaTransientRepository();

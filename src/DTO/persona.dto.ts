@@ -1,25 +1,20 @@
-import { Persona } from '../models/persona'; // Asegúrate de que esta ruta sea correcta para tu tipo Persona
-import { WithId } from 'mongodb'; // Si tus entidades MongoDB tienen _id, necesitarás esto
+import { Persona } from '../models/persona'; 
+import { ObjectId } from 'mongodb'; 
 
-/**
- * Define la estructura de datos que se enviará para listar Personas.
- * Solo incluye las propiedades necesarias para la vista de listado.
- */
 export interface PersonaListingDTO {
-    id: string; // El ID de la persona (probablemente ObjectId de MongoDB convertido a string)
+    id: string; 
     dni: string;
-    nombreCompleto: string; // Un ejemplo: nombre + apellido
-    genero: Persona['genero']; // Reusa el tipo de genero de Persona
-    // Añade aquí cualquier otra propiedad que desees en el listado
+    nombreCompleto: string; 
+    genero: Persona['genero']; 
 }
 
-/**
- * Mapea una entidad Persona (con _id de MongoDB) a un PersonaListingDTO.
- * Esto transforma el objeto de la base de datos a un formato más adecuado para el cliente.
- */
-export const fromPersonaToListingDTO = (entity: WithId<Persona>): PersonaListingDTO => {
+export const fromPersonaToListingDTO = (entity: Persona & { _id: string | ObjectId }): PersonaListingDTO => {
+    const idString = typeof entity._id === 'string'
+        ? entity._id 
+        : entity._id.toHexString(); 
+
     return {
-        id: entity._id.toHexString(), // Convierte ObjectId a string
+        id: idString, 
         dni: entity.dni,
         nombreCompleto: `${entity.nombre} ${entity.apellido}`,
         genero: entity.genero,

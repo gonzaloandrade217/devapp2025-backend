@@ -8,9 +8,9 @@ const personas: Record<UUID, WithTransientId<Persona>> = {};
 const autos: Record<UUID, WithTransientId<Auto>> = {}; 
 
 if (process.env.SEED_DATA === 'true') {
-    personas['1'] = {
+    personas['1'] = { 
         _id: '1', 
-        id: '1',
+        id: '1', 
         dni: '123456789',
         nombre: 'Juan',
         apellido: 'Pérez',
@@ -19,14 +19,26 @@ if (process.env.SEED_DATA === 'true') {
         donanteOrganos: true,
         autos: []
     };
+    autos['101'] = { 
+        _id: '101',
+        id: '101', 
+        patente: 'AA123BB', 
+        marca: 'Ford',
+        modelo: 'Fiesta',
+        anio: 2018,
+        color: 'Rojo',
+        nroChasis: 'CHASIS123',
+        nroMotor: 'MOTOR123',
+        personaID: '1' 
+    };
 }
 
 export const db: {
     personas: Record<UUID, WithTransientId<Persona>>;
     autos: Record<UUID, WithTransientId<Auto>>;
-    all: <T>(collection: Record<UUID, T & { _id: UUID }>) => Array<T & { _id: UUID }>; 
+    all: <T extends { _id: UUID }>(collection: Record<UUID, T>) => Array<T>; 
 } = {
     personas,
     autos,
-    all: <T>(collection: Record<UUID, T & { _id: UUID }>): Array<T & { _id: UUID }> => Object.values(collection)
+    all: <T extends { _id: UUID }>(collection: Record<UUID, T>): Array<T> => Object.values(collection)
 };
