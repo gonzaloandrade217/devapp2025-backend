@@ -1,25 +1,24 @@
-import { WithId, ObjectId } from "mongodb";
-import { Auto } from "../models/auto";
+import { Auto } from "../models/auto"; 
 import { Persona } from "../models/persona"; 
 import { IService } from "./IService"; 
-import { IAutoRepository } from '../repositories/IAutoRepository';
+import { IAutoRepository } from '../repositories/IAutoRepository'; 
 import { IRepository } from "../repositories/IRepository"; 
 import logger from "../config/logger";
 
-export class AutoService implements IService<Auto, string | ObjectId> { 
-    private autoRepository: IAutoRepository<string> | IAutoRepository<ObjectId>;
-    private personaRepository: IRepository<Persona, string> | IRepository<Persona, ObjectId>; 
+export class AutoService implements IService<Auto, string> { 
+    private autoRepository: IAutoRepository<string>;
+    private personaRepository: IRepository<Persona, string>; 
 
     constructor(
-        autoRepository: IAutoRepository<string> | IAutoRepository<ObjectId>,
-        personaRepository: IRepository<Persona, string> | IRepository<Persona, ObjectId>
+        autoRepository: IAutoRepository<string>,
+        personaRepository: IRepository<Persona, string>
     ) {
         this.autoRepository = autoRepository;
         this.personaRepository = personaRepository;
         logger.info("[AutoService] Instancia creada.");
     }
 
-    public async getAll(): Promise<(Auto & { _id: string | ObjectId })[]> {
+    public async getAll(): Promise<Auto[]> { 
         logger.info("[AutoService] Intentando obtener todos los autos.");
         try {
             const autos = await this.autoRepository.getAll();
@@ -31,23 +30,23 @@ export class AutoService implements IService<Auto, string | ObjectId> {
         }
     }
 
-    public async getById(id: string): Promise<(Auto & { _id: string | ObjectId }) | null> {
+    public async getById(id: string): Promise<Auto | null> { 
         logger.info(`[AutoService] Intentando obtener auto por ID: ${id}`);
         try {
-            const autoDoc = await this.autoRepository.getById(id);
-            if (!autoDoc) {
+            const auto = await this.autoRepository.getById(id);
+            if (!auto) {
                 logger.warn(`[AutoService] Auto no encontrado para el ID: ${id}`);
                 return null;
             }
             logger.info(`[AutoService] Auto encontrado con ID: ${id}`);
-            return autoDoc;
+            return auto;
         } catch (error: any) {
             logger.error(`[AutoService] Error al obtener auto por ID ${id}: ${error.message}`, { stack: error.stack });
             throw error;
         }
     }
 
-    public async create(autoData: Omit<Auto, '_id' | 'id'>): Promise<(Auto & { _id: string | ObjectId })> {
+    public async create(autoData: Omit<Auto, 'id'>): Promise<Auto> {
         logger.info("[AutoService] Iniciando la creación de un nuevo auto.");
         if (!autoData.patente || !autoData.marca || !autoData.modelo) {
             logger.warn("[AutoService] Intento de creación de auto sin campos obligatorios (patente, marca o modelo).");
@@ -56,8 +55,7 @@ export class AutoService implements IService<Auto, string | ObjectId> {
 
         try {
             const createdAuto = await this.autoRepository.create(autoData);
-            const createdAutoIdString = typeof createdAuto._id === 'string' ? createdAuto._id : createdAuto._id.toHexString();
-            logger.info(`[AutoService] Auto creado con éxito. ID: ${createdAutoIdString}`);
+            logger.info(`[AutoService] Auto creado con éxito. ID: ${createdAuto.id}`); 
             return createdAuto;
         } catch (error: any) {
             logger.error(`[AutoService] Error al crear auto: ${error.message}`, { stack: error.stack, autoData: autoData });
@@ -65,17 +63,16 @@ export class AutoService implements IService<Auto, string | ObjectId> {
         }
     }
 
-    public async update(id: string, autoData: Partial<Auto>): Promise<(Auto & { _id: string | ObjectId }) | null> {
+    public async update(id: string, autoData: Partial<Auto>): Promise<Auto | null> { 
         logger.info(`[AutoService] Iniciando la actualización para el auto con ID: ${id}`);
         try {
-            const updated = await this.autoRepository.update(id, autoData);
-            if (!updated) {
+            const updatedAuto = await this.autoRepository.update(id, autoData);
+            if (!updatedAuto) {
                 logger.warn(`[AutoService] El repositorio no pudo actualizar/encontrar el Auto con ID: ${id}.`);
                 return null;
             }
-            const updatedAutoIdString = typeof updated._id === 'string' ? updated._id : updated._id.toHexString();
-            logger.info(`[AutoService] El repositorio actualizó el Auto con éxito. ID: ${updatedAutoIdString}`);
-            return updated;
+            logger.info(`[AutoService] El repositorio actualizó el Auto con éxito. ID: ${updatedAuto.id}`); 
+            return updatedAuto;
         } catch (error: any) {
             logger.error(`[AutoService] Error al actualizar auto ID ${id}: ${error.message}`, { stack: error.stack, updateData: autoData });
             throw error;
@@ -98,7 +95,7 @@ export class AutoService implements IService<Auto, string | ObjectId> {
         }
     }
 
-    public async getByPatente(patente: string): Promise<(Auto & { _id: string | ObjectId }) | null> {
+    public async getByPatente(patente: string): Promise<Auto | null> { 
         logger.info(`[AutoService] Intentando obtener auto por patente: ${patente}`);
         try {
             const result = await this.autoRepository.getByPatente(patente);
@@ -114,7 +111,7 @@ export class AutoService implements IService<Auto, string | ObjectId> {
         }
     }
 
-    public async getByPersonaId(personaID: string): Promise<(Auto & { _id: string | ObjectId })[]> {
+    public async getByPersonaId(personaID: string): Promise<Auto[]> { 
         logger.info(`[AutoService] Intentando obtener autos por ID de persona: ${personaID}`);
         try {
             const autos = await this.autoRepository.getByPersonaId(personaID);

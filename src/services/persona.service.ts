@@ -1,25 +1,24 @@
-import { WithId, ObjectId } from "mongodb";
 import { Persona } from "../models/persona";
-import { IService } from "./IService"; 
+import { IService } from "./IService";
 import { IRepository } from '../repositories/IRepository';
 import { Auto } from '../models/auto';
 import logger from "../config/logger";
 import { IAutoRepository } from "../repositories/IAutoRepository";
 
-export class PersonaService implements IService<Persona, string | ObjectId> { 
-    private personaRepository: IRepository<Persona, string> | IRepository<Persona, ObjectId>; 
-    private autoRepository: IAutoRepository<string> | IAutoRepository<ObjectId>; 
+export class PersonaService implements IService<Persona, string> {
+    private personaRepository: IRepository<Persona, string>;
+    private autoRepository: IAutoRepository<string>;
 
     constructor(
-        personaRepository: IRepository<Persona, string> | IRepository<Persona, ObjectId>,
-        autoRepository: IAutoRepository<string> | IAutoRepository<ObjectId>
+        personaRepository: IRepository<Persona, string>,
+        autoRepository: IAutoRepository<string>
     ) {
         this.personaRepository = personaRepository;
         this.autoRepository = autoRepository;
-        logger.info("[PersonaService] Instancia creada."); 
+        logger.info("[PersonaService] Instancia creada.");
     }
 
-    public async getAll(): Promise<(Persona & { _id: string | ObjectId })[]> {
+    public async getAll(): Promise<Persona[]> {
         logger.info("[PersonaService] Intentando obtener todas las personas.");
         try {
             const personas = await this.personaRepository.getAll();
@@ -27,66 +26,46 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
             return personas;
         } catch (error: any) {
             logger.error(`[PersonaService] Error al obtener todas las personas: ${error.message}`, { stack: error.stack });
-            throw error; 
+            throw error;
         }
     }
 
-    public async getById(id: string): Promise<(Persona & { _id: string | ObjectId }) | null> {
+    public async getById(id: string): Promise<Persona | null> {
         logger.info(`[PersonaService] Intentando obtener persona por ID: ${id}`);
         try {
-            const personaDoc = await this.personaRepository.getById(id);
+            const persona = await this.personaRepository.getById(id);
 
-            if (!personaDoc) {
+            if (!persona) {
                 logger.warn(`[PersonaService] Persona no encontrada para el ID: ${id}`);
                 return null;
             }
 
-            const personaIdString: string = typeof personaDoc._id === 'string' 
-                ? personaDoc._id 
-                : personaDoc._id.toHexString();
-
             let autosAsociados: Auto[] = [];
 
             try {
-                const autosDocs = await this.autoRepository.getByPersonaId(personaIdString);
-
-                autosAsociados = autosDocs.map(autoDoc => {
-                    const autoIdString = typeof autoDoc._id === 'string' 
-                        ? autoDoc._id 
-                        : autoDoc._id.toHexString();
-                    return {
-                        id: autoIdString,
-                        patente: autoDoc.patente,
-                        marca: autoDoc.marca,
-                        modelo: autoDoc.modelo,
-                        anio: autoDoc.anio,
-                        color: autoDoc.color,
-                        nroChasis: autoDoc.nroChasis,
-                        nroMotor: autoDoc.nroMotor,
-                        personaID: autoDoc.personaID,
-                    } as Auto;
-                });
-                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados para la persona ID: ${personaIdString}`);
+                const autos = await this.autoRepository.getByPersonaId(persona.id);
+                autosAsociados = autos;
+                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados para la persona ID: ${persona.id}`);
 
             } catch (error: any) {
-                logger.error(`[PersonaService] Error al obtener autos para persona ID ${personaIdString}: ${error.message}`, { stack: error.stack });
+                logger.error(`[PersonaService] Error al obtener autos para persona ID ${persona.id}: ${error.message}`, { stack: error.stack });
                 autosAsociados = [];
             }
 
-            const personaFinal: Persona & { _id: string | ObjectId } = {
-                ...personaDoc,
-                autos: autosAsociados 
+            const personaFinal: Persona = {
+                ...persona,
+                autos: autosAsociados
             };
 
             logger.info(`[PersonaService] Persona ID ${id} recuperada con éxito, incluyendo sus autos asociados.`);
             return personaFinal;
         } catch (error: any) {
             logger.error(`[PersonaService] Error en getById para ID ${id}: ${error.message}`, { stack: error.stack });
-            throw error; 
+            throw error;
         }
     }
 
-    public async create(personaData: Omit<Persona, '_id' | 'id'>): Promise<(Persona & { _id: string | ObjectId })> {
+    public async create(personaData: Omit<Persona, 'id'>): Promise<Persona> {
         logger.info("[PersonaService] Iniciando la creación de una nueva persona.");
         if (!personaData.nombre || !personaData.dni) {
             logger.warn("[PersonaService] Intento de creación de persona sin campos obligatorios (nombre o DNI).");
@@ -98,7 +77,7 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
             throw new Error('Formato de DNI inválido');
         }
 
-        const dataToCreate: Omit<Persona, '_id' | 'id'> = { ...personaData };
+        const dataToCreate: Omit<Persona, 'id'> = { ...personaData };
 
         if ('fechaDeNacimiento' in dataToCreate && typeof (dataToCreate as any).fechaDeNacimiento === 'string' && !isNaN(new Date((dataToCreate as any).fechaDeNacimiento).getTime())) {
             (dataToCreate as any).fechaDeNacimiento = new Date((dataToCreate as any).fechaDeNacimiento);
@@ -110,21 +89,19 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
         try {
             const createdPersona = await this.personaRepository.create(dataToCreate);
 
-            const createdPersonaIdString = typeof createdPersona._id === 'string' ? createdPersona._id : createdPersona._id.toHexString();
-            
-            const personaWithEmptyAutos: Persona & { _id: string | ObjectId } = {
+            const personaWithEmptyAutos: Persona = {
                 ...createdPersona,
-                autos: [] 
+                autos: []
             };
-            logger.info(`[PersonaService] Persona creada con éxito. ID: ${createdPersonaIdString}`);
+            logger.info(`[PersonaService] Persona creada con éxito. ID: ${personaWithEmptyAutos.id}`);
             return personaWithEmptyAutos;
         } catch (error: any) {
             logger.error(`[PersonaService] Error al crear persona: ${error.message}`, { stack: error.stack, personaData: personaData });
-            throw error; 
+            throw error;
         }
     }
 
-    public async update(id: string, personaData: Partial<Persona>): Promise<(Persona & { _id: string | ObjectId }) | null> {
+    public async update(id: string, personaData: Partial<Persona>): Promise<Persona | null> {
         logger.info(`[PersonaService] Iniciando la actualización para la persona con ID: ${id}`);
         if (personaData.dni && !this.validarDNI(personaData.dni)) {
             logger.warn(`[PersonaService] Intento de actualización de persona con ID ${id} con formato de DNI inválido: ${personaData.dni}`);
@@ -142,36 +119,26 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
 
         try {
             logger.debug(`[PersonaService] Intentando actualizar Persona con ID: ${id}. Datos enviados: ${JSON.stringify(dataToUpdate)}`);
-            const updated = await this.personaRepository.update(id, dataToUpdate);
-            
-            if (!updated) {
+            const updatedPersona = await this.personaRepository.update(id, dataToUpdate);
+
+            if (!updatedPersona) {
                 logger.warn(`[PersonaService] El repositorio no pudo actualizar/encontrar la Persona con ID: ${id}.`);
                 return null;
             }
-            
-            const updatedPersonaIdString = typeof updated._id === 'string' ? updated._id : updated._id.toHexString();
-            logger.info(`[PersonaService] El repositorio actualizó la Persona con éxito. ID: ${updatedPersonaIdString}`);
 
-            const personaIdForAutoQuery = typeof updated._id === 'string' 
-                ? updated._id 
-                : updated._id.toHexString();
+            logger.info(`[PersonaService] El repositorio actualizó la Persona con éxito. ID: ${updatedPersona.id}`);
 
             let autosAsociados: Auto[] = [];
             try {
-                autosAsociados = (await this.autoRepository.getByPersonaId(personaIdForAutoQuery)).map(autoDoc => {
-                    const autoIdString = typeof autoDoc._id === 'string' 
-                        ? autoDoc._id 
-                        : autoDoc._id.toHexString();
-                    return { ...autoDoc, id: autoIdString } as Auto;
-                });
-                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados durante la actualización para la persona ID: ${personaIdForAutoQuery}`);
+                autosAsociados = await this.autoRepository.getByPersonaId(updatedPersona.id);
+                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados durante la actualización para la persona ID: ${updatedPersona.id}`);
             } catch (error: any) {
-                logger.error(`[PersonaService] Error al obtener autos para persona ID ${personaIdForAutoQuery} durante la actualización: ${error.message}`, { stack: error.stack });
+                logger.error(`[PersonaService] Error al obtener autos para persona ID ${updatedPersona.id} durante la actualización: ${error.message}`, { stack: error.stack });
                 autosAsociados = [];
             }
 
-            const updatedPersonaWithAutos: Persona & { _id: string | ObjectId } = {
-                ...updated,
+            const updatedPersonaWithAutos: Persona = {
+                ...updatedPersona,
                 autos: autosAsociados
             };
 
@@ -179,7 +146,7 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
             return updatedPersonaWithAutos;
         } catch (error: any) {
             logger.error(`[PersonaService] Error al actualizar persona ID ${id}: ${error.message}`, { stack: error.stack, updateData: personaData });
-            throw error; 
+            throw error;
         }
     }
 
@@ -195,7 +162,7 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
             return deleted;
         } catch (error: any) {
             logger.error(`[PersonaService] Error al eliminar persona ID ${id}: ${error.message}`, { stack: error.stack });
-            throw error; 
+            throw error;
         }
     }
 
@@ -204,14 +171,14 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
         nombre: string;
         apellido: string;
         dni: string;
-        genero: string;
-        donanteOrganos: boolean
+        genero: string; 
+        donanteOrganos: boolean;
     }[]> {
         logger.info("[PersonaService] Obteniendo lista resumida de personas.");
         try {
             const personas = await this.personaRepository.getAll();
             const resumidas = personas.map(p => ({
-                id: typeof p._id === 'string' ? p._id : p._id.toHexString(),
+                id: p.id,
                 nombre: p.nombre,
                 apellido: p.apellido,
                 dni: p.dni,
@@ -222,7 +189,7 @@ export class PersonaService implements IService<Persona, string | ObjectId> {
             return resumidas;
         } catch (error: any) {
             logger.error(`[PersonaService] Error al obtener personas resumidas: ${error.message}`, { stack: error.stack });
-            throw error; 
+            throw error;
         }
     }
 

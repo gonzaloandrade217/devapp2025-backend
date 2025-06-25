@@ -9,3 +9,8 @@ tsconfig.build.json
 dist/
 
 .env
+
+# Archivo de clave de servicio de Firebase
+/src/config/serviceAccountKey.json
+
+personas-autos-firebase-adminsdk-fbsvc-02546a7ee7.json

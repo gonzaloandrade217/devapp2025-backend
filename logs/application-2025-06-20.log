@@ -1,0 +1,175 @@
+2025-06-20 18:18:55 [info] Conectado a MongoDB.
+2025-06-20 18:18:55 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-20 18:18:55 [info] [AutoService] Instancia creada.
+2025-06-20 18:18:55 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-20 18:18:55 [info] [PersonaService] Instancia creada.
+2025-06-20 18:18:55 [info] Example app listening on port 3000
+2025-06-20 18:19:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:19:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:19:24 [info] [personasRepository] Se obtuvieron 3 documentos.
+2025-06-20 18:19:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:19:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:19:24 [info] [personasRepository] Se obtuvieron 3 documentos.
+2025-06-20 18:28:58 [info] [PersonaController] Intento de creación de nueva persona.
+2025-06-20 18:28:58 [info] [PersonaService] Iniciando la creación de una nueva persona.
+2025-06-20 18:28:58 [info] [personasRepository] Documento creado con éxito. ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:28:58 [info] [PersonaService] Persona creada con éxito. ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:28:58 [info] [PersonaController] Persona creada con éxito. ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:28:58 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:28:58 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:28:58 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:28:58 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:28:58 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:28:58 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:05 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:05 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:05 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:11 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:11 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:11 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:11 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:11 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:11 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:13 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:13 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:13 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:47 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:47 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-20 18:29:47 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:29:48 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:48 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:48 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:48 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:48 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:48 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:58 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:58 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:58 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:29:58 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:29:58 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:29:58 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:30:23 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:30:23 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:30:23 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:36:57 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:36:57 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:36:57 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:40:26 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:40:26 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:40:26 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:40:26 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:40:26 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:40:26 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:40:28 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:40:28 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:40:28 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:00 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:00 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:00 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:04 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:43:04 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:43:04 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:43:04 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:43:04 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:43:04 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:43:41 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:41 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:41 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:43:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:43:46 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:43:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 18:43:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 18:43:46 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 18:43:55 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:43:55 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:43:55 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:57:14 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:57:14 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:14 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:57:20 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 18:57:20 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 18:57:20 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 19:06:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 19:06:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 19:06:42 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 19:06:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 19:06:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 19:06:42 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 19:06:45 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 19:06:45 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:06:45 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 19:07:26 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 19:07:26 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 19:07:26 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 19:07:26 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-20 19:07:26 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-20 19:07:26 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-20 19:07:29 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-20 19:07:29 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-20 19:07:29 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.

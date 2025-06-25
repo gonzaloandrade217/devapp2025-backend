@@ -4,12 +4,45 @@ import { Auto } from '../../models/auto';
 import logger from '../../config/logger';
 import { IAutoRepository } from '../IAutoRepository'; 
 
-export class AutoMongoRepository extends AbstractMongoRepository<Auto> implements IAutoRepository<ObjectId> {
+export class AutoMongoRepository extends AbstractMongoRepository<Auto> implements IAutoRepository<string> {
     protected collectionName: string = 'autos';
 
     constructor(db: Db) {
         super(db);
         logger.info(`[AutoMongoRepository] Instancia creada para colección: ${this.collectionName}`);
+    }
+
+    protected mapToDomain(document: WithId<Document>): Auto {
+        const idString = document._id.toHexString();
+
+        return {
+            id: idString, 
+            patente: document.patente as string,
+            marca: document.marca as string,
+            modelo: document.modelo as string,
+            anio: document.anio as number,
+            color: document.color as string,
+            nroChasis: document.nroChasis as string,
+            nroMotor: document.nroMotor as string,
+            personaID: document.personaID as string, 
+        } as Auto; 
+    }
+
+    protected mapToMongo(entity: Omit<Auto, 'id'> | Partial<Auto>): Document {
+        const mongoDocument: Document = {
+            patente: entity.patente,
+            marca: entity.marca,
+            modelo: entity.modelo,
+            anio: entity.anio,
+            color: entity.color,
+            nroChasis: entity.nroChasis,
+            nroMotor: entity.nroMotor,
+            personaID: entity.personaID,
+        };
+
+        Object.keys(mongoDocument).forEach(key => mongoDocument[key] === undefined && delete mongoDocument[key]);
+
+        return mongoDocument;
     }
 
     async getByPatente(patente: string): Promise<(Auto & { _id: ObjectId }) | null> { 
