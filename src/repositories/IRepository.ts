@@ -1,10 +1,7 @@
-import { WithId } from 'mongodb';
-
-export interface IRepository<T> {
-    getAll(): Promise<WithId<T>[]>;
-    getById(id: string): Promise<WithId<T> | null>;
-    create(data: Omit<T, '_id' | 'id'>): Promise<WithId<T>>;
-    update(id: string, data: Partial<T>): Promise<WithId<T> | null>;
+export interface IRepository<T, ID_TYPE = string> { 
+    getAll(): Promise<T[]>;
+    getById(id: string): Promise<T  | null>;
+    create(entity: Omit<T, 'id'>): Promise<T>; 
+    update(id: string, entity: Partial<T>): Promise<T | null>;
     delete(id: string): Promise<boolean>;
-    getByPersonaId?(personaID: string): Promise<WithId<T>[]>; 
 }

@@ -1,7 +1,8 @@
-import { ObjectId, Db, WithId, Document, Collection, Filter, UpdateFilter, OptionalUnlessRequiredId } from 'mongodb'; 
+import { ObjectId, Db, Document, Collection, Filter, UpdateFilter, OptionalUnlessRequiredId, WithId, FindOneAndUpdateOptions, InsertOneResult } from 'mongodb';
 import { IRepository } from '../IRepository';
+import logger from '../../config/logger';
 
-export abstract class AbstractMongoRepository<TEntity> implements IRepository<TEntity> {
+export abstract class AbstractMongoRepository<TEntity extends { id: string }> implements IRepository<TEntity, string> {
     protected abstract collectionName: string;
     protected db: Db;
 
@@ -9,78 +10,124 @@ export abstract class AbstractMongoRepository<TEntity> implements IRepository<TE
         this.db = db;
     }
 
-    protected getCollectionInstance(): Collection<Document> { 
-        return this.db.collection<Document>(this.collectionName); 
+    protected getCollectionInstance(): Collection<Document> {
+        return this.db.collection<Document>(this.collectionName);
     }
 
-    public async getAll(): Promise<WithId<TEntity>[]> {
+    protected abstract mapToDomain(document: WithId<Document>): TEntity;
+
+    protected abstract mapToMongo(entity: Omit<TEntity, 'id'> | Partial<TEntity>): Document;
+
+    public async getAll(): Promise<TEntity[]> { 
         try {
+            logger.debug(`[${this.collectionName}Repository] Intentando obtener todos los documentos.`);
             const documents = await this.getCollectionInstance().find().toArray();
-            return documents as WithId<TEntity>[]; 
-        } catch (error) {
-            console.error('Error al obtener todos los documentos:', error);
+            logger.info(`[${this.collectionName}Repository] Se obtuvieron ${documents.length} documentos.`);
+
+            return documents.map(doc => this.mapToDomain(doc));
+        } catch (error: any) {
+            logger.error(`[${this.collectionName}Repository] Error al obtener todos los documentos: ${error.message}`, {
+                error: error,
+                stack: error.stack
+            });
             throw error;
         }
     }
 
-    public async getById(id: string): Promise<WithId<TEntity> | null> {
+    public async getById(id: string): Promise<TEntity | null> { 
         try {
-            const objectId = new ObjectId(id);
+            const objectId = new ObjectId(id); 
+            logger.debug(`[${this.collectionName}Repository] Intentando obtener documento por ID: ${id}`);
             const result = await this.getCollectionInstance().findOne({ _id: objectId });
-            return result as WithId<TEntity> | null; 
-        } catch (error) {
-            console.error(`Error al obtener el documento con ID ${id}:`, error);
-            return null;
+
+            if (result) {
+                logger.info(`[${this.collectionName}Repository] Documento encontrado con ID: ${id}`);
+                return this.mapToDomain(result);
+            } else {
+                logger.warn(`[${this.collectionName}Repository] Documento no encontrado con ID: ${id}`);
+                return null;
+            }
+        } catch (error: any) {
+            logger.error(`[${this.collectionName}Repository] Error al obtener el documento con ID ${id}: ${error.message}`, {
+                error: error,
+                stack: error.stack,
+                invalidId: id
+            });
+            if (error instanceof Error && error.message.includes('Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer')) {
+                return null; 
+            }
+            throw error; 
         }
     }
 
-    public async update(id: string, entity: Partial<TEntity>): Promise<WithId<TEntity> | null> {
+    public async update(id: string, entity: Partial<TEntity>): Promise<TEntity | null> { 
         try {
             const objectId = new ObjectId(id);
-            const filter: Filter<Document> = { _id: new ObjectId(id) }; 
-            const updateDoc: UpdateFilter<Document> = { $set: entity as Document }; 
+            const filter: Filter<Document> = { _id: objectId };
+            const updateDoc: UpdateFilter<Document> = { $set: this.mapToMongo(entity) };
 
-            console.log("REPOSITORY DEBUG: ***** INICIANDO DEPURACIÓN DE UPDATE *****");
-            console.log("REPOSITORY DEBUG: Intentando findOneAndUpdate con ID:", objectId.toHexString()); 
-            console.log("REPOSITORY DEBUG: Query de busqueda:", JSON.stringify(filter, null, 2)); 
-            console.log("REPOSITORY DEBUG: Datos que se enviarán en $set:", JSON.stringify(entity, null, 2)); 
+            logger.debug(`[${this.collectionName}Repository] INICIANDO DEPURACIÓN DE UPDATE`);
+            logger.debug(`[${this.collectionName}Repository] Intentando findOneAndUpdate con ID: ${objectId.toHexString()}`);
+            logger.debug(`[${this.collectionName}Repository] Query de búsqueda: ${JSON.stringify(filter)}`);
+            logger.debug(`[${this.collectionName}Repository] Datos que se enviarán en $set: ${JSON.stringify(entity)}`);
+
+            const options: FindOneAndUpdateOptions = { returnDocument: 'after' };
 
             const result = await this.getCollectionInstance().findOneAndUpdate(
-                filter, 
-                updateDoc, 
-                { returnDocument: 'after' } 
+                filter,
+                updateDoc,
+                options
             );
 
             if (result) {
-                console.log("REPOSITORY DEBUG: Documento ENCONTRADO y ACTUALIZADO.");
-                console.log("REPOSITORY DEBUG: ID del documento actualizado:", result._id);
-                console.log("REPOSITORY DEBUG: Documento COMPLETO después de actualización:", JSON.stringify(result, null, 2));
-                console.log("REPOSITORY DEBUG: ***** FIN DEPURACIÓN DE UPDATE (ÉXITO) *****");
-                return result as WithId<TEntity>; 
+                logger.info(`[${this.collectionName}Repository] Documento ENCONTRADO y ACTUALIZADO. ID: ${result._id.toHexString()}`);
+                logger.debug(`[${this.collectionName}Repository] Documento COMPLETO después de actualización: ${JSON.stringify(result)}`);
+                logger.debug(`[${this.collectionName}Repository] FIN DEPURACIÓN DE UPDATE (ÉXITO)`);
+                return this.mapToDomain(result);
             } else {
-                console.log("REPOSITORY DEBUG: Documento NO ENCONTRADO para el ID:", objectId.toHexString()); // También cambiar aquí
-                console.log("REPOSITORY DEBUG: Resultado de findOneAndUpdate:", result); 
-                if (result && result === null) {
-                    console.log("REPOSITORY DEBUG: findOneAndUpdate encontró el documento pero devolvió null (posiblemente no hubo cambios o un error interno en la operación del driver/DB).");
-                }
-                console.log("REPOSITORY DEBUG: ***** FIN DEPURACIÓN DE UPDATE (FALLO) *****");
-                return null; 
+                logger.warn(`[${this.collectionName}Repository] Documento NO ENCONTRADO para el ID: ${objectId.toHexString()}. No se realizó actualización.`);
+                logger.debug(`[${this.collectionName}Repository] Resultado de findOneAndUpdate: ${JSON.stringify(result)}`);
+                logger.debug(`[${this.collectionName}Repository] FIN DEPURACIÓN DE UPDATE (FALLO)`);
+                return null;
             }
 
         } catch (error: any) {
-            console.error(`REPOSITORY DEBUG: ERROR FATAL durante la actualización para ID ${id}:`, error.message, error.stack);
-            console.log("REPOSITORY DEBUG: ***** FIN DEPURACIÓN DE UPDATE (ERROR FATAL) *****");
-            return null; 
+            logger.error(`[${this.collectionName}Repository] ERROR FATAL durante la actualización para ID ${id}: ${error.message}`, {
+                error: error,
+                stack: error.stack,
+                entityId: id,
+                updateData: entity
+            });
+            logger.debug(`[${this.collectionName}Repository] FIN DEPURACIÓN DE UPDATE (ERROR FATAL)`);
+            throw error;
         }
     }
 
-    public async create(entity: Omit<TEntity, '_id' | 'id'>): Promise<WithId<TEntity>> {
+    public async create(entity: Omit<TEntity, 'id'>): Promise<TEntity> {
         try {
-            const documentToInsert: Document = { ...entity, _id: new ObjectId() }; 
-            const result = await this.getCollectionInstance().insertOne(documentToInsert); 
-            return { _id: result.insertedId, ...entity } as WithId<TEntity>; 
-        } catch (error) {
-            console.error('Error al crear un nuevo documento:', error);
+            logger.debug(`[${this.collectionName}Repository] Intentando crear nuevo documento.`);
+            const documentToInsert: OptionalUnlessRequiredId<Document> = this.mapToMongo(entity) as OptionalUnlessRequiredId<Document>;
+
+            const result: InsertOneResult<Document> = await this.getCollectionInstance().insertOne(documentToInsert);
+
+            if (!result.acknowledged) {
+                logger.error(`[${this.collectionName}Repository] Falló el reconocimiento de inserción para nuevo documento.`);
+                throw new Error('Inserción de documento no reconocida por MongoDB.');
+            }
+
+            logger.info(`[${this.collectionName}Repository] Documento creado con éxito. ID: ${result.insertedId.toHexString()}`);
+            const createdDocWithId: WithId<Document> = {
+                _id: result.insertedId,
+                ...documentToInsert 
+            } as WithId<Document>; 
+
+            return this.mapToDomain(createdDocWithId);
+        } catch (error: any) {
+            logger.error(`[${this.collectionName}Repository] Error al crear un nuevo documento: ${error.message}`, {
+                error: error,
+                stack: error.stack,
+                entityData: entity
+            });
             throw error;
         }
     }
@@ -88,12 +135,22 @@ export abstract class AbstractMongoRepository<TEntity> implements IRepository<TE
     public async delete(id: string): Promise<boolean> {
         try {
             const objectId = new ObjectId(id);
+            logger.debug(`[${this.collectionName}Repository] Intentando eliminar documento con ID: ${id}`);
             const filter: Filter<Document> = { _id: objectId };
             const result = await this.getCollectionInstance().deleteOne(filter);
+            if (result.deletedCount > 0) {
+                logger.info(`[${this.collectionName}Repository] Documento eliminado con éxito. ID: ${id}`);
+            } else {
+                logger.warn(`[${this.collectionName}Repository] Documento no encontrado para eliminar con ID: ${id}.`);
+            }
             return result.deletedCount > 0;
-        } catch (error) {
-            console.error(`Error al eliminar el documento con ID ${id}:`, error);
-            return false;
+        } catch (error: any) {
+            logger.error(`[${this.collectionName}Repository] Error al eliminar el documento con ID ${id}: ${error.message}`, {
+                error: error,
+                stack: error.stack,
+                deleteId: id
+            });
+            throw error;
         }
     }
 }

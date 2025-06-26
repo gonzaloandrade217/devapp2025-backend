@@ -1,0 +1,576 @@
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:39:27 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:113:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:36:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 20:44:17 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:113:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:36:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 20:48:24 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:112:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:35:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.

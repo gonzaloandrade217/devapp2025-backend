@@ -1,137 +1,182 @@
-import { WithId } from "mongodb";
 import { Persona } from "../models/persona";
 import { IService } from "./IService";
 import { IRepository } from '../repositories/IRepository';
 import { Auto } from '../models/auto';
+import logger from "../config/logger";
+import { IAutoRepository } from "../repositories/IAutoRepository";
+import { Temporal } from 'temporal-polyfill'; 
 
-export class PersonaService implements IService<Persona> {
-    private personaRepository: IRepository<Persona>;
-    private autoRepository: IRepository<Auto>;
+export class PersonaService implements IService<Persona, string> {
+    private personaRepository: IRepository<Persona, string>;
+    private autoRepository: IAutoRepository<string>;
 
-    constructor(personaRepository: IRepository<Persona>, autoRepository: IRepository<Auto>) {
+    constructor(
+        personaRepository: IRepository<Persona, string>,
+        autoRepository: IAutoRepository<string>
+    ) {
         this.personaRepository = personaRepository;
         this.autoRepository = autoRepository;
+        logger.info("[PersonaService] Instancia creada.");
     }
 
-    public async getAll(): Promise<WithId<Persona>[]> {
-        const personas = await this.personaRepository.getAll();
-        return personas;
-    }
-
-    public async getById(id: string): Promise<WithId<Persona> | null> {
-        const personaDoc = await this.personaRepository.getById(id);
-
-        if (!personaDoc) {
-            return null;
-        }
-
-        const personaIdString = personaDoc._id.toHexString();
-        let autosAsociados: Auto[] = [];
-
+    public async getAll(): Promise<Persona[]> {
+        logger.info("[PersonaService] Intentando obtener todas las personas.");
         try {
-            if (this.autoRepository.getByPersonaId) {
-                const autosDocs = await this.autoRepository.getByPersonaId(personaIdString);
+            const personas = await this.personaRepository.getAll();
+            logger.debug(`[PersonaService] Se encontraron ${personas.length} personas.`);
+            return personas;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error al obtener todas las personas: ${error.message}`, { stack: error.stack });
+            throw error;
+        }
+    }
 
-                autosAsociados = autosDocs.map(autoDoc => {
-                    return {
-                        id: autoDoc._id.toHexString(),
-                        patente: autoDoc.patente,
-                        marca: autoDoc.marca,
-                        modelo: autoDoc.modelo,
-                        anio: autoDoc.anio,
-                        color: autoDoc.color,
-                        nroChasis: autoDoc.nroChasis,
-                        nroMotor: autoDoc.nroMotor,
-                        personaID: autoDoc.personaID,
-                    } as Auto;
-                });
-            } else {
-                console.warn("PersonaService: El 'autoRepository' no tiene implementado 'getByPersonaId'. Asegúrese de que el repositorio de autos lo implemente.");
+    public async getById(id: string): Promise<Persona | null> {
+        logger.info(`[PersonaService] Intentando obtener persona por ID: ${id}`);
+        try {
+            const persona = await this.personaRepository.getById(id);
+
+            if (!persona) {
+                logger.warn(`[PersonaService] Persona no encontrada para el ID: ${id}`);
+                return null;
             }
 
-        } catch (error) {
-            console.error(`Error al obtener autos para persona ID ${personaIdString}:`, error);
-            autosAsociados = [];
+            let autosAsociados: Auto[] = [];
+
+            try {
+                const autos = await this.autoRepository.getByPersonaId(persona.id);
+                autosAsociados = autos;
+                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados para la persona ID: ${persona.id}`);
+
+            } catch (error: any) {
+                logger.error(`[PersonaService] Error al obtener autos para persona ID ${persona.id}: ${error.message}`, { stack: error.stack });
+                autosAsociados = [];
+            }
+
+            const personaFinal: Persona = {
+                ...persona,
+                autos: autosAsociados
+            };
+
+            logger.info(`[PersonaService] Persona ID ${id} recuperada con éxito, incluyendo sus autos asociados.`);
+            return personaFinal;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error en getById para ID ${id}: ${error.message}`, { stack: error.stack });
+            throw error;
         }
-
-        const personaFinal: WithId<Persona> = {
-            ...personaDoc,
-            autos: autosAsociados 
-        };
-
-        return personaFinal;
     }
 
-    public async create(personaData: Omit<Persona, '_id' | 'id'>): Promise<WithId<Persona>> {
+    public async create(personaData: Omit<Persona, 'id'>): Promise<Persona> {
+        logger.info("[PersonaService] Iniciando la creación de una nueva persona.");
         if (!personaData.nombre || !personaData.dni) {
+            logger.warn("[PersonaService] Intento de creación de persona sin campos obligatorios (nombre o DNI).");
             throw new Error('Nombre y DNI son campos obligatorios');
         }
 
-        const dataToCreate: Omit<Persona, '_id' | 'id'> = { ...personaData };
-
-        if ('fechaNacimiento' in dataToCreate && typeof dataToCreate.fechaNacimiento === 'string' && !isNaN(new Date(dataToCreate.fechaNacimiento).getTime())) {
-            dataToCreate.fechaNacimiento = new Date(dataToCreate.fechaNacimiento) as any;
-            console.log("Service: CONVERSIÓN DE FECHA (CREATE) APLICADA. Fecha después de conversión:", dataToCreate.fechaNacimiento);
-        } else {
-            console.log("Service: CONVERSIÓN DE FECHA (CREATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToCreate.fechaDeNacimiento, dataToCreate.fechaDeNacimiento);
+        if (personaData.dni && !this.validarDNI(personaData.dni)) {
+            logger.warn(`[PersonaService] Intento de creación de persona con formato de DNI inválido: ${personaData.dni}`);
+            throw new Error('Formato de DNI inválido');
         }
 
-        const createdPersona = await this.personaRepository.create(dataToCreate);
+        const dataToCreate: Omit<Persona, 'id'> = { ...personaData };
 
-        const personaWithEmptyAutos: WithId<Persona> = {
-            ...createdPersona,
-            autos: []
-        };
-        return personaWithEmptyAutos;
+        if ('fechaDeNacimiento' in dataToCreate && typeof (dataToCreate as any).fechaDeNacimiento === 'string' && !isNaN(new Date((dataToCreate as any).fechaDeNacimiento).getTime())) {
+            const dateStr = (dataToCreate as any).fechaDeNacimiento;
+            try {
+                dataToCreate.fechaDeNacimiento = Temporal.PlainDate.from(dateStr);
+                logger.debug("[PersonaService] Conversión de fecha (CREATE) aplicada. Fecha después de la conversión:", dataToCreate.fechaDeNacimiento.toString());
+            } catch (e) {
+                logger.warn(`[PersonaService] Falló la conversión de fecha a Temporal.PlainDate (CREATE) para: ${dateStr}. Error: ${e}`);
+                dataToCreate.fechaDeNacimiento = undefined;
+            }
+        } else {
+            logger.debug("[PersonaService] Conversión de fecha (CREATE) NO aplicada. Tipo o valor inesperado para fechaDeNacimiento:", typeof (dataToCreate as any).fechaDeNacimiento, (dataToCreate as any).fechaDeNacimiento);
+        }
+
+        try {
+            const createdPersona = await this.personaRepository.create(dataToCreate);
+
+            const personaWithEmptyAutos: Persona = {
+                ...createdPersona,
+                autos: []
+            };
+            logger.info(`[PersonaService] Persona creada con éxito. ID: ${personaWithEmptyAutos.id}`);
+            return personaWithEmptyAutos;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error al crear persona: ${error.message}`, { stack: error.stack, personaData: personaData });
+            throw error;
+        }
     }
 
-    public async update(id: string, personaData: Partial<Persona>): Promise<WithId<Persona> | null> {
+    public async update(id: string, personaData: Partial<Persona>): Promise<Persona | null> {
+        logger.info(`[PersonaService] Iniciando la actualización para la persona con ID: ${id}`);
         if (personaData.dni && !this.validarDNI(personaData.dni)) {
+            logger.warn(`[PersonaService] Intento de actualización de persona con ID ${id} con formato de DNI inválido: ${personaData.dni}`);
             throw new Error('Formato de DNI inválido');
         }
 
         const dataToUpdate: Partial<Persona> = { ...personaData };
 
-        if ('fechaNacimiento' in dataToUpdate && typeof dataToUpdate.fechaNacimiento === 'string' && !isNaN(new Date(dataToUpdate.fechaNacimiento).getTime())) {
-            dataToUpdate.fechaNacimiento = new Date(dataToUpdate.fechaNacimiento) as any;
-            console.log("Service: CONVERSIÓN DE FECHA (UPDATE) APLICADA. Fecha después de conversión:", dataToUpdate.fechaNacimiento);
-        } else {
-            console.log("Service: CONVERSIÓN DE FECHA (UPDATE) NO APLICADA. Tipo o valor inesperado de fechaNacimiento:", typeof dataToUpdate.fechaDeNacimiento, dataToUpdate.fechaDeNacimiento);
-        }
-
-        console.log("Service: Intentando actualizar Persona con ID:", id);
-        console.log("Service: Datos que se enviarán al repositorio (con fecha potencialmente convertida):", dataToUpdate);
-
-        const updated = await this.personaRepository.update(id, dataToUpdate);
-        console.log("persona updated", updated);
-        if (!updated) {
-            console.log("Service: Repositorio no pudo actualizar/encontrar la Persona.");
-            return null;
-        }
-        console.log("Service: Repositorio actualizó Persona:", updated._id);
-
-        const personaIdString = updated._id.toHexString();
-        let autosAsociados: Auto[] = [];
-        try {
-            if (this.autoRepository.getByPersonaId) {
-                autosAsociados = (await this.autoRepository.getByPersonaId(personaIdString)).map(auto => ({ ...auto })) as Auto[];
-            } else {
-                console.warn("PersonaService: El 'autoRepository' no tiene implementado 'getByPersonaId' durante la actualización.");
+        if ('fechaDeNacimiento' in dataToUpdate && typeof (dataToUpdate as any).fechaDeNacimiento === 'string' && !isNaN(new Date((dataToUpdate as any).fechaDeNacimiento).getTime())) {
+            const dateStr = (dataToUpdate as any).fechaDeNacimiento;
+            try {
+                dataToUpdate.fechaDeNacimiento = Temporal.PlainDate.from(dateStr);
+                logger.debug("[PersonaService] Conversión de fecha (UPDATE) aplicada. Fecha después de la conversión:", dataToUpdate.fechaDeNacimiento.toString());
+            } catch (e) {
+                logger.warn(`[PersonaService] Falló la conversión de fecha a Temporal.PlainDate (UPDATE) para: ${dateStr}. Error: ${e}`);
+                dataToUpdate.fechaDeNacimiento = undefined;
             }
-        } catch (error) {
-            console.error(`Error al obtener autos para persona ID ${personaIdString} durante la actualización:`, error);
+        } else {
+            logger.debug("[PersonaService] Conversión de fecha (UPDATE) NO aplicada. Tipo o valor inesperado para fechaDeNacimiento:", typeof (dataToUpdate as any).fechaDeNacimiento, (dataToUpdate as any).fechaDeNacimiento);
         }
 
-        const updatedPersonaWithAutos: WithId<Persona> = {
-            ...updated,
-            autos: autosAsociados
-        };
+        try {
+            logger.debug(`[PersonaService] Intentando actualizar Persona con ID: ${id}. Datos enviados: ${JSON.stringify(dataToUpdate)}`);
+            const updatedPersona = await this.personaRepository.update(id, dataToUpdate);
 
-        return updatedPersonaWithAutos;
+            if (!updatedPersona) {
+                logger.warn(`[PersonaService] El repositorio no pudo actualizar/encontrar la Persona con ID: ${id}.`);
+                return null;
+            }
+
+            logger.info(`[PersonaService] El repositorio actualizó la Persona con éxito. ID: ${updatedPersona.id}`);
+
+            let autosAsociados: Auto[] = [];
+            try {
+                autosAsociados = await this.autoRepository.getByPersonaId(updatedPersona.id);
+                logger.debug(`[PersonaService] Se encontraron ${autosAsociados.length} autos asociados durante la actualización para la persona ID: ${updatedPersona.id}`);
+            } catch (error: any) {
+                logger.error(`[PersonaService] Error al obtener autos para persona ID ${updatedPersona.id} durante la actualización: ${error.message}`, { stack: error.stack });
+                autosAsociados = [];
+            }
+
+            const updatedPersonaWithAutos: Persona = {
+                ...updatedPersona,
+                autos: autosAsociados
+            };
+
+            logger.info(`[PersonaService] Persona ID ${id} actualizada y preparada con autos asociados.`);
+            return updatedPersonaWithAutos;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error al actualizar persona ID ${id}: ${error.message}`, { stack: error.stack, updateData: personaData });
+            throw error;
+        }
     }
 
     public async delete(id: string): Promise<boolean> {
-        return this.personaRepository.delete(id);
+        logger.info(`[PersonaService] Iniciando la eliminación de la persona con ID: ${id}`);
+        try {
+            const deleted = await this.personaRepository.delete(id);
+            if (deleted) {
+                logger.info(`[PersonaService] Persona ID ${id} eliminada con éxito.`);
+            } else {
+                logger.warn(`[PersonaService] Persona ID ${id} no encontrada para eliminar.`);
+            }
+            return deleted;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error al eliminar persona ID ${id}: ${error.message}`, { stack: error.stack });
+            throw error;
+        }
     }
 
     public async getPersonasResumidas(): Promise<{
@@ -140,20 +185,32 @@ export class PersonaService implements IService<Persona> {
         apellido: string;
         dni: string;
         genero: string;
-        donanteOrganos: boolean
+        donanteOrganos: boolean;
     }[]> {
-        const personas = await this.personaRepository.getAll();
-        return personas.map(p => ({
-            id: p._id.toHexString(),
-            nombre: p.nombre,
-            apellido: p.apellido,
-            dni: p.dni,
-            genero: p.genero,
-            donanteOrganos: p.donanteOrganos
-        }));
+        logger.info("[PersonaService] Obteniendo lista resumida de personas.");
+        try {
+            const personas = await this.personaRepository.getAll();
+            const resumidas = personas.map(p => ({
+                id: p.id,
+                nombre: p.nombre,
+                apellido: p.apellido,
+                dni: p.dni,
+                genero: p.genero,
+                donanteOrganos: p.donanteOrganos
+            }));
+            logger.debug(`[PersonaService] Se generaron ${resumidas.length} personas resumidas.`);
+            return resumidas;
+        } catch (error: any) {
+            logger.error(`[PersonaService] Error al obtener personas resumidas: ${error.message}`, { stack: error.stack });
+            throw error;
+        }
     }
 
     private validarDNI(dni: string): boolean {
-        return /^\d{7,8}$/.test(dni);
+        const isValid = /^\d{7,8}$/.test(dni);
+        if (!isValid) {
+            logger.debug(`[PersonaService] Falló la validación de DNI para: ${dni}`);
+        }
+        return isValid;
     }
 }

@@ -1,0 +1,1091 @@
+2025-06-24 17:44:57 [info] Conectado a MongoDB.
+2025-06-24 17:44:57 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 17:44:57 [info] [AutoService] Instancia creada.
+2025-06-24 17:44:57 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 17:44:57 [info] [PersonaService] Instancia creada.
+2025-06-24 17:44:57 [info] Example app listening on port 3000
+2025-06-24 17:45:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:19 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:19 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:24 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 17:45:24 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:24 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 17:45:29 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:29 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:29 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:29 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:29 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:29 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:32 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 17:45:32 [info] [PersonaController] Solicitud de persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [PersonaService] Intentando obtener persona por ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [personasRepository] Documento encontrado con ID: 6855d29a1d24a7664e2a328e
+2025-06-24 17:45:32 [info] [PersonaService] Persona ID 6855d29a1d24a7664e2a328e recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 17:45:41 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:41 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:41 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:41 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:41 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:41 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:53 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 17:45:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 17:45:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 17:45:53 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 18:59:11 [info] Intentando conectar a MongoDB.
+2025-06-24 18:59:11 [info] Conectado a MongoDB.
+2025-06-24 18:59:11 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 18:59:11 [info] [AutoService] Instancia creada.
+2025-06-24 18:59:11 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 18:59:11 [info] [PersonaService] Instancia creada.
+2025-06-24 18:59:11 [info] Example app listening on port 3000
+2025-06-24 19:21:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:21:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:21:19 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:21:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:21:19 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:19 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:21:34 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:21:34 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:21:34 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:21:34 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:21:34 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:22:39 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:22:39 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:22:39 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:23:23 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:23:23 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:23:23 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:23:23 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:23:23 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:42 [info] Intentando conectar a MongoDB.
+2025-06-24 19:27:42 [info] Conectado a MongoDB.
+2025-06-24 19:27:42 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:27:42 [info] [AutoService] Instancia creada.
+2025-06-24 19:27:42 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:27:42 [info] [PersonaService] Instancia creada.
+2025-06-24 19:27:42 [info] Example app listening on port 3000
+2025-06-24 19:27:48 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:27:48 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:27:48 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:27:48 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:25 [info] Intentando conectar a MongoDB.
+2025-06-24 19:33:25 [info] Conectado a MongoDB.
+2025-06-24 19:33:25 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:33:25 [info] [AutoService] Instancia creada.
+2025-06-24 19:33:25 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:33:25 [info] [PersonaService] Instancia creada.
+2025-06-24 19:33:25 [info] Example app listening on port 3000
+2025-06-24 19:33:35 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:33:35 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:33:35 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:33:35 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:36:51 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:36:51 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:36:51 [error] Error: Method not implemented.
+    at PersonaMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\persona.repository.js:17:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at PersonaMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:10 [info] Intentando conectar a MongoDB.
+2025-06-24 19:37:10 [info] Conectado a MongoDB.
+2025-06-24 19:37:10 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:37:10 [info] [AutoService] Instancia creada.
+2025-06-24 19:37:10 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:37:10 [info] [PersonaService] Instancia creada.
+2025-06-24 19:37:10 [info] Example app listening on port 3000
+2025-06-24 19:37:15 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:37:15 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:37:15 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:37:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:37:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:37:24 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:37:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:37:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:37:24 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:37:26 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 19:37:26 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [personasRepository] Documento encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-24 19:37:26 [info] [PersonaService] Persona ID 684221bc8a3719cfc31ba97f recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 19:37:32 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:37:32 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:37:32 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:37:32 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:37:32 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:37:32 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:37:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 19:37:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 19:37:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 19:37:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 19:37:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:37:37 [error] Error: Method not implemented.
+    at AutoMongoRepository.mapToDomain (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\auto.repository.js:20:15)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:50
+    at Array.map (<anonymous>)
+    at AutoMongoRepository.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:31:34)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\gonza\Desktop\MiProyecto\backend\dist\repositories\mongo\abstract.repository.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 19:40:08 [info] Intentando conectar a MongoDB.
+2025-06-24 19:40:08 [info] Conectado a MongoDB.
+2025-06-24 19:40:08 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:40:08 [info] [AutoService] Instancia creada.
+2025-06-24 19:40:08 [info] [AutoMongoRepository] Instancia creada para colección: autos
+2025-06-24 19:40:08 [info] [PersonaService] Instancia creada.
+2025-06-24 19:40:08 [info] Example app listening on port 3000
+2025-06-24 19:40:12 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 19:40:12 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 19:40:12 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 19:40:12 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 19:40:12 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 19:40:12 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 19:40:14 [info] [AutoController] Solicitud de auto por ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [AutoService] Intentando obtener auto por ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [autosRepository] Documento encontrado con ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [AutoService] Auto encontrado con ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [AutoController] Solicitud de auto por ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [AutoService] Intentando obtener auto por ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [autosRepository] Documento encontrado con ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:14 [info] [AutoService] Auto encontrado con ID: 68537434b8bb1b742358c04b
+2025-06-24 19:40:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:40:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:40:21 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:40:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:40:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:40:21 [info] [personasRepository] Se obtuvieron 4 documentos.
+2025-06-24 19:55:22 [info] Intentando conectar a Firebase Firestore.
+2025-06-24 19:55:23 [info] Conectado a Firebase Firestore.
+2025-06-24 19:55:23 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 19:55:23 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 19:55:23 [info] [AutoService] Instancia creada.
+2025-06-24 19:55:23 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 19:55:23 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 19:55:23 [info] [PersonaService] Instancia creada.
+2025-06-24 19:55:23 [info] Example app listening on port 3000
+2025-06-24 19:56:56 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:56:56 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:05 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:23 [info] Intentando conectar a Firebase Firestore.
+2025-06-24 19:57:23 [info] Conectado a Firebase Firestore.
+2025-06-24 19:57:23 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 19:57:23 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 19:57:23 [info] [AutoService] Instancia creada.
+2025-06-24 19:57:23 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 19:57:23 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 19:57:23 [info] [PersonaService] Instancia creada.
+2025-06-24 19:57:23 [info] Example app listening on port 3000
+2025-06-24 19:57:28 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 19:57:28 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 19:57:29 [error] Error: 7 PERMISSION_DENIED: Cloud Firestore API has not been used in project personas-autos before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=personas-autos then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:06 [info] Intentando conectar a Firebase Firestore.
+2025-06-24 20:02:06 [info] Conectado a Firebase Firestore.
+2025-06-24 20:02:06 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:02:06 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:02:06 [info] [AutoService] Instancia creada.
+2025-06-24 20:02:06 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:02:06 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:02:06 [info] [PersonaService] Instancia creada.
+2025-06-24 20:02:06 [info] Example app listening on port 3000
+2025-06-24 20:02:12 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 20:02:12 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:02:13 [error] Error: 5 NOT_FOUND: 
+    at callErrorFromStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\call.js:32:19)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:359:73)
+    at Object.onReceiveStatus (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client-interceptors.js:324:181)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\resolving-call.js:135:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeServerStreamRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\client.js:342:32)
+    at ServiceClientImpl.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@grpc\grpc-js\build\src\make-client.js:105:19)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:237:29
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:38:28
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\normalCalls\timeout.js:44:16
+    at Object.request (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:234:40)
+    at makeRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:159:28)
+    at retryRequest (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\retry-request\index.js:119:5)
+    at StreamProxy.setStream (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streaming.js:225:37)
+    at StreamingApiCaller.call (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\google-gax\build\src\streamingCalls\streamingApiCaller.js:54:16)
+Caused by: Error
+    at QueryUtil._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query-util.js:44:23)
+    at CollectionReference._getResponse (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:784:32)
+    at CollectionReference._get (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:777:35)
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\reference\query.js:745:43
+    at C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:110:30
+    at NoopContextManager.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\context\NoopContextManager.js:25:19)
+    at ContextAPI.with (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\api\context.js:60:46)
+    at NoopTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\NoopTracer.js:65:31)
+    at ProxyTracer.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@opentelemetry\api\build\src\trace\ProxyTracer.js:36:24)
+    at EnabledTraceUtil.startActiveSpan (C:\Users\gonza\Desktop\MiProyecto\backend\node_modules\@google-cloud\firestore\build\src\telemetry\enabled-trace-util.js:102:28)
+2025-06-24 20:38:22 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 20:38:22 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 20:38:22 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:38:22 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:38:22 [info] [AutoService] Instancia creada.
+2025-06-24 20:38:22 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:38:22 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:38:22 [info] [PersonaService] Instancia creada.
+2025-06-24 20:38:22 [info] Example app listening on port 3000
+2025-06-24 20:39:27 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:113:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:36:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 20:44:17 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:113:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:36:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 20:45:41 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 20:45:41 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 20:45:41 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:45:41 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:45:41 [info] [AutoService] Instancia creada.
+2025-06-24 20:45:41 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:45:41 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:45:41 [info] [PersonaService] Instancia creada.
+2025-06-24 20:45:41 [info] Example app listening on port 3000
+2025-06-24 20:48:24 [error] Error: Function not implemented.
+    at cors (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:112:11)
+    at Object.<anonymous> (C:\Users\gonza\Desktop\MiProyecto\backend\dist\server.js:35:9)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-06-24 20:51:15 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 20:51:15 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 20:51:15 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:51:15 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:51:15 [info] [AutoService] Instancia creada.
+2025-06-24 20:51:15 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 20:51:15 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 20:51:15 [info] [PersonaService] Instancia creada.
+2025-06-24 20:51:15 [info] Example app listening on port 3000
+2025-06-24 20:51:26 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 20:51:26 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 20:51:27 [info] [personasRepository] Se obtuvieron 0 documentos.
+2025-06-24 20:51:46 [info] [PersonaController] Intento de creación de nueva persona.
+2025-06-24 20:51:46 [info] [PersonaService] Iniciando la creación de una nueva persona.
+2025-06-24 21:02:04 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 21:02:04 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 21:02:04 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:02:04 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:02:04 [info] [AutoService] Instancia creada.
+2025-06-24 21:02:04 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:02:04 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:02:04 [info] [PersonaService] Instancia creada.
+2025-06-24 21:02:04 [info] Example app listening on port 3000
+2025-06-24 21:02:10 [info] [PersonaController] Intento de creación de nueva persona.
+2025-06-24 21:02:10 [info] [PersonaService] Iniciando la creación de una nueva persona.
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.
+2025-06-24 21:08:33 [error] FirebaseError: 7 PERMISSION_DENIED: Missing or insufficient permissions.
+2025-06-24 21:09:13 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 21:09:13 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 21:09:13 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:09:13 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:09:13 [info] [AutoService] Instancia creada.
+2025-06-24 21:09:13 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:09:13 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:09:13 [info] [PersonaService] Instancia creada.
+2025-06-24 21:09:13 [info] Example app listening on port 3000
+2025-06-24 21:09:19 [info] [PersonaController] Intento de creación de nueva persona.
+2025-06-24 21:09:19 [info] [PersonaService] Iniciando la creación de una nueva persona.
+2025-06-24 21:09:19 [info] [personasRepository] Documento creado con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:09:19 [info] [PersonaService] Persona creada con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:09:19 [info] [PersonaController] Persona creada con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:09:27 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:09:27 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:09:27 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:24 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:24 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:24 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:24 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:29 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:29 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:29 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:29 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:29 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:29 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:35 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:35 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:36 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:36 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:36 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:36 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:37 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:37 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:38 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:10:38 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:10:38 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:10:38 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:11:05 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:11:05 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:11:05 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:11:05 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:11:05 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:11:05 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:15:57 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 21:15:57 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 21:15:57 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:15:57 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:15:57 [info] [AutoService] Instancia creada.
+2025-06-24 21:15:57 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:15:57 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:15:57 [info] [PersonaService] Instancia creada.
+2025-06-24 21:15:57 [info] Example app listening on port 3000
+2025-06-24 21:16:12 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:12 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:12 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:12 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:12 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:13 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:22 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:22 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:22 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:16:23 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:16:27 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:27 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:28 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:28 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:28 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:28 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:44 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:20:44 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:20:44 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:44 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:20:44 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:20:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:46 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:46 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:20:47 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:48 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:48 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:06 [info] [PersonaController] Recibiendo PUT para actualizar persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:06 [info] [PersonaService] Iniciando la actualización para la persona con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [personasRepository] Documento actualizado con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] El repositorio actualizó la Persona con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX actualizada y preparada con autos asociados.
+2025-06-24 21:21:07 [info] [PersonaController] Persona ID fbnqal3YSufGR9I4RENX actualizada con éxito.
+2025-06-24 21:21:07 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:08 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:14 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:21:14 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:21:15 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:21:15 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:21:15 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:21:15 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:21:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:21 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:22 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:32 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:32 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:32 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:38 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:38 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:38 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:38 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:38 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:39 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:45 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:45 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:45 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:45 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:48 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:48 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:52 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:52 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:52 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:52 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:52 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:52 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:54 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:54 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:55 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:22:01 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:01 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:02 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:02 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:02 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:02 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:07 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:22:07 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:22:08 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:22:08 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:22:08 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:22:08 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:22:09 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:09 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:09 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:09 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:17 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:17 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:17 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:22 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:22 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:22 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:57 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:57 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:57 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:57 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:57 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:57 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:46 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:46 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:49 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:49 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:49 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:25:50 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:25:59 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:59 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:59 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:59 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:59 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:59 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:28 [info] [AutoController] Intento de creación de auto: "Ford" - "Fiesta"
+2025-06-24 21:26:28 [info] [AutoService] Iniciando la creación de un nuevo auto.
+2025-06-24 21:26:28 [info] [autosRepository] Documento creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoService] Auto creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoController] Auto creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:28 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:29 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:29 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:29 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:29 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:31 [info] [AutoController] Solicitud de auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Intentando obtener auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [autosRepository] Documento encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Auto encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoController] Solicitud de auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Intentando obtener auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [autosRepository] Documento encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Auto encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:42 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:42 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:44 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:44 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:44 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:45 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:53 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:53 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:55 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:55 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:56 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:30:56 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:30:56 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:30:56 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:30:56 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:30:56 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:30:57 [info] [personasRepository] Se obtuvieron 1 documentos.

@@ -1,62 +1,47 @@
-import { UUID } from '../../models/UUID';
-import { IRepository } from '../IRepository'; 
-import { db } from './db';
-import { ObjectId, WithId } from 'mongodb'; 
+import { IRepository } from '../IRepository';
 
-export abstract class AbstractTransientRepository<T> implements IRepository<T> {
-    protected collection: Record<UUID, T & { _id: UUID }>;
+export abstract class AbstractTransientRepository<T extends { id?: string }> implements IRepository<T, string> {
+    protected collection: T[];
 
-    constructor(collection: Record<UUID, T & { _id: UUID }>) {
-        this.collection = collection;
+    constructor(initialData: T[] = []) { 
+        this.collection = initialData;
     }
 
-    private convertToObjectId(id: UUID): ObjectId {
-        try {
-            return new ObjectId(id);
-        } catch (e) {
-            console.warn(`ID "${id}" no es un ObjectId válido para conversión. Generando un nuevo ObjectId.`);
-            return new ObjectId(); 
-        }
+    public async getAll(): Promise<T[]> { 
+        return Promise.resolve(this.collection);
     }
 
-    private mapToWithId(entity: T & { _id: UUID }): WithId<T> {
-        return {
+    public async getById(id: string): Promise<T | null> { 
+        const found = this.collection.find(item => item.id === id);
+        return Promise.resolve(found || null);
+    }
+
+    public async create(entity: Omit<T, 'id'>): Promise<T> { 
+        const newId = (Math.random() * 1000000000).toFixed(0).toString();
+        const newEntity: T = {
             ...entity,
-            _id: this.convertToObjectId(entity._id)
-        } as WithId<T>;
+            id: newId 
+        } as T; 
+
+        this.collection.push(newEntity);
+        return Promise.resolve(newEntity);
     }
 
-    async getAll(): Promise<WithId<T>[]> {
-        const allEntities = db.all(this.collection);
-        return allEntities.map(entity => this.mapToWithId(entity));
+    public async update(id: string, entity: Partial<T>): Promise<T | null> { 
+        let updatedEntity: T | null = null;
+        this.collection = this.collection.map(item => {
+            if (item.id === id) { 
+                updatedEntity = { ...item, ...entity } as T;
+                return updatedEntity;
+            }
+            return item;
+        });
+        return Promise.resolve(updatedEntity);
     }
 
-    async getById(id: string): Promise<WithId<T> | null> {
-        const entity = this.collection[id];
-        return entity ? this.mapToWithId(entity) : null;
-    }
-
-    async create(data: Omit<T, '_id' | 'id'>): Promise<WithId<T>> {
-        const newId = (Object.keys(this.collection).length + 1).toString();
-        const newEntityInternal: T & { _id: UUID } = { ...data as T, _id: newId };
-        this.collection[newId] = newEntityInternal;
-        return this.mapToWithId(newEntityInternal);
-    }
-
-    async update(id: string, data: Partial<T>): Promise<WithId<T> | null> {
-        if (!this.collection[id]) {
-            return null;
-        }
-        const updatedEntityInternal: T & { _id: UUID } = { ...this.collection[id], ...data };
-        this.collection[id] = updatedEntityInternal;
-        return this.mapToWithId(updatedEntityInternal);
-    }
-
-    async delete(id: string): Promise<boolean> {
-        if (!this.collection[id]) {
-            return false;
-        }
-        delete this.collection[id];
-        return true;
+    public async delete(id: string): Promise<boolean> {
+        const initialLength = this.collection.length;
+        this.collection = this.collection.filter(item => item.id !== id); 
+        return Promise.resolve(this.collection.length < initialLength);
     }
 }
