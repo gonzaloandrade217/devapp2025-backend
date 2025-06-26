@@ -857,3 +857,235 @@ Caused by: Error
 2025-06-24 21:11:05 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
 2025-06-24 21:11:05 [info] [PersonaService] Obteniendo lista resumida de personas.
 2025-06-24 21:11:05 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:15:57 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-24 21:15:57 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-24 21:15:57 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:15:57 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:15:57 [info] [AutoService] Instancia creada.
+2025-06-24 21:15:57 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-24 21:15:57 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-24 21:15:57 [info] [PersonaService] Instancia creada.
+2025-06-24 21:15:57 [info] Example app listening on port 3000
+2025-06-24 21:16:12 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:12 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:12 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:12 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:12 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:13 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:22 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:22 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:22 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:16:23 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:16:23 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:16:27 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:27 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:28 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:16:28 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:16:28 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:16:28 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:44 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:20:44 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:20:44 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:44 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:20:44 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:20:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:20:46 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:46 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:20:47 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:47 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:48 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:20:48 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:06 [info] [PersonaController] Recibiendo PUT para actualizar persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:06 [info] [PersonaService] Iniciando la actualización para la persona con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [personasRepository] Documento actualizado con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] El repositorio actualizó la Persona con éxito. ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX actualizada y preparada con autos asociados.
+2025-06-24 21:21:07 [info] [PersonaController] Persona ID fbnqal3YSufGR9I4RENX actualizada con éxito.
+2025-06-24 21:21:07 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:07 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:08 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:08 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:14 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:21:14 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:21:15 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:21:15 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:21:15 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:21:15 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:21:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:21 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:21 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:21 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:22 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:32 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:32 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:32 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:38 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:38 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:38 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:38 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:38 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:39 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:45 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:45 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:45 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:45 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:45 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:48 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:48 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:48 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:49 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:52 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:52 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:52 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:52 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:21:52 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:21:52 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:21:54 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:54 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:21:55 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:21:55 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:22:01 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:01 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:02 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:02 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:02 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:02 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:07 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:22:07 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:22:08 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:22:08 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:22:08 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:22:08 [info] [autosRepository] Se obtuvieron 0 documentos.
+2025-06-24 21:22:09 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:09 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:22:09 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:22:09 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:22:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:17 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:17 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:17 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:22 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:22 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:22 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:57 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:57 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:57 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:24:57 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:24:57 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:24:57 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:46 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:46 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:46 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:46 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:49 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:49 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:49 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:25:50 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [autosRepository] Se encontraron 0 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:25:50 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:25:59 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:59 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:59 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:25:59 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:25:59 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:25:59 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:28 [info] [AutoController] Intento de creación de auto: "Ford" - "Fiesta"
+2025-06-24 21:26:28 [info] [AutoService] Iniciando la creación de un nuevo auto.
+2025-06-24 21:26:28 [info] [autosRepository] Documento creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoService] Auto creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoController] Auto creado con éxito. ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:28 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:28 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:29 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:29 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:29 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:29 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:31 [info] [AutoController] Solicitud de auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Intentando obtener auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [autosRepository] Documento encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Auto encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoController] Solicitud de auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Intentando obtener auto por ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [autosRepository] Documento encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:31 [info] [AutoService] Auto encontrado con ID: KwBI6suhnfWSRTlKoW9b
+2025-06-24 21:26:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:37 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-06-24 21:26:37 [info] [AutoService] Intentando obtener todos los autos.
+2025-06-24 21:26:37 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:42 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:42 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:42 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:42 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:44 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:44 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:44 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:45 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:45 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:53 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:53 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:26:53 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:26:53 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:26:55 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:55 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:55 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:26:56 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-24 21:26:56 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-24 21:30:56 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:30:56 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:30:56 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-24 21:30:56 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-24 21:30:56 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-24 21:30:57 [info] [personasRepository] Se obtuvieron 1 documentos.

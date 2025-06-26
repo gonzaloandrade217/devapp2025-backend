@@ -11,7 +11,7 @@ export type Persona = {
     dni: string;
     nombre: string;
     apellido: string;
-    fechaDeNacimiento: Temporal.PlainDate;
+    fechaDeNacimiento?: Temporal.PlainDate;
     genero: Genero;
     donanteOrganos: boolean;
     autos: Auto[];

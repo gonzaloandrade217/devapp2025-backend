@@ -1,0 +1,73 @@
+2025-06-26 17:14:43 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-26 17:14:43 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-26 17:14:43 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:14:43 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:14:43 [info] [AutoService] Instancia creada.
+2025-06-26 17:14:43 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:14:43 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:14:43 [info] [PersonaService] Instancia creada.
+2025-06-26 17:14:44 [info] Example app listening on port 3000
+2025-06-26 17:15:25 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-06-26 17:15:25 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-06-26 17:15:26 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-06-26 17:15:34 [info] [PersonaController] Solicitud de persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-26 17:15:34 [info] [PersonaService] Intentando obtener persona por ID: 684221bc8a3719cfc31ba97f
+2025-06-26 17:15:34 [warn] [personasRepository] Documento no encontrado con ID: 684221bc8a3719cfc31ba97f
+2025-06-26 17:15:34 [warn] [PersonaService] Persona no encontrada para el ID: 684221bc8a3719cfc31ba97f
+2025-06-26 17:15:34 [warn] [PersonaController] Persona no encontrada con ID: 684221bc8a3719cfc31ba97f
+2025-06-26 17:16:34 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:16:34 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:16:35 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:16:35 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:16:35 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-26 17:31:02 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-26 17:31:02 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-26 17:31:02 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:31:02 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:31:02 [info] [AutoService] Instancia creada.
+2025-06-26 17:31:02 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:31:02 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:31:02 [info] [PersonaService] Instancia creada.
+2025-06-26 17:31:02 [info] Example app listening on port 3000
+2025-06-26 17:31:19 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:31:19 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:31:20 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:31:20 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:31:20 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-26 17:32:13 [info] [PersonaController] Recibiendo PUT para actualizar persona ID: 684b47eef4c4823f06cd2567
+2025-06-26 17:32:13 [info] [PersonaService] Iniciando la actualización para la persona con ID: 684b47eef4c4823f06cd2567
+2025-06-26 17:32:13 [warn] [PersonaFirebaseRepository] 'fechaDeNacimiento' no es Temporal.PlainDate para guardar: Wed Jun 07 2000 21:00:00 GMT-0300 (hora estándar de Argentina)
+2025-06-26 17:32:13 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:32:13 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:32:13 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:33:53 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-06-26 17:33:53 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-06-26 17:33:53 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:33:53 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:33:53 [info] [AutoService] Instancia creada.
+2025-06-26 17:33:53 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-06-26 17:33:53 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-06-26 17:33:53 [info] [PersonaService] Instancia creada.
+2025-06-26 17:33:53 [info] Example app listening on port 3000
+2025-06-26 17:34:30 [info] [PersonaController] Recibiendo PUT para actualizar persona ID: 684b47eef4c4823f06cd2567
+2025-06-26 17:34:30 [info] [PersonaService] Iniciando la actualización para la persona con ID: 684b47eef4c4823f06cd2567
+2025-06-26 17:34:30 [warn] [PersonaFirebaseRepository] 'fechaDeNacimiento' no es Temporal.PlainDate para guardar: Mon May 14 1990 21:00:00 GMT-0300 (hora estándar de Argentina)
+2025-06-26 17:34:31 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:34:31 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:34:31 [error] FirebaseError: 5 NOT_FOUND: No document to update: projects/personas-autos/databases/(default)/documents/personas/684b47eef4c4823f06cd2567
+2025-06-26 17:34:36 [info] [PersonaController] Solicitud de persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:34:36 [info] [PersonaService] Intentando obtener persona por ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:34:36 [info] [personasRepository] Documento encontrado con ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:34:37 [info] [autosRepository] Se encontraron 1 autos para la persona ID: fbnqal3YSufGR9I4RENX
+2025-06-26 17:34:37 [info] [PersonaService] Persona ID fbnqal3YSufGR9I4RENX recuperada con éxito, incluyendo sus autos asociados.
+2025-06-26 17:35:08 [info] [PersonaController] Intento de creación de nueva persona.
+2025-06-26 17:35:08 [info] [PersonaService] Iniciando la creación de una nueva persona.
+2025-06-26 17:35:08 [warn] [PersonaFirebaseRepository] 'fechaDeNacimiento' no es Temporal.PlainDate para guardar: Mon May 14 1990 21:00:00 GMT-0300 (hora estándar de Argentina)
+2025-06-26 17:35:08 [info] [personasRepository] Documento creado con éxito. ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:08 [info] [PersonaService] Persona creada con éxito. ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:08 [info] [PersonaController] Persona creada con éxito. ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:23 [info] [PersonaController] Solicitud de persona por ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:23 [info] [PersonaService] Intentando obtener persona por ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:24 [info] [personasRepository] Documento encontrado con ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:24 [info] [autosRepository] Se encontraron 0 autos para la persona ID: KWvukEKe1xziDYCQwMjl
+2025-06-26 17:35:24 [info] [PersonaService] Persona ID KWvukEKe1xziDYCQwMjl recuperada con éxito, incluyendo sus autos asociados.

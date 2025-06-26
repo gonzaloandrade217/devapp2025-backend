@@ -4,6 +4,7 @@ import { IRepository } from '../repositories/IRepository';
 import { Auto } from '../models/auto';
 import logger from "../config/logger";
 import { IAutoRepository } from "../repositories/IAutoRepository";
+import { Temporal } from 'temporal-polyfill'; 
 
 export class PersonaService implements IService<Persona, string> {
     private personaRepository: IRepository<Persona, string>;
@@ -80,8 +81,14 @@ export class PersonaService implements IService<Persona, string> {
         const dataToCreate: Omit<Persona, 'id'> = { ...personaData };
 
         if ('fechaDeNacimiento' in dataToCreate && typeof (dataToCreate as any).fechaDeNacimiento === 'string' && !isNaN(new Date((dataToCreate as any).fechaDeNacimiento).getTime())) {
-            (dataToCreate as any).fechaDeNacimiento = new Date((dataToCreate as any).fechaDeNacimiento);
-            logger.debug("[PersonaService] Conversión de fecha (CREATE) aplicada. Fecha después de la conversión:", (dataToCreate as any).fechaDeNacimiento);
+            const dateStr = (dataToCreate as any).fechaDeNacimiento;
+            try {
+                dataToCreate.fechaDeNacimiento = Temporal.PlainDate.from(dateStr);
+                logger.debug("[PersonaService] Conversión de fecha (CREATE) aplicada. Fecha después de la conversión:", dataToCreate.fechaDeNacimiento.toString());
+            } catch (e) {
+                logger.warn(`[PersonaService] Falló la conversión de fecha a Temporal.PlainDate (CREATE) para: ${dateStr}. Error: ${e}`);
+                dataToCreate.fechaDeNacimiento = undefined;
+            }
         } else {
             logger.debug("[PersonaService] Conversión de fecha (CREATE) NO aplicada. Tipo o valor inesperado para fechaDeNacimiento:", typeof (dataToCreate as any).fechaDeNacimiento, (dataToCreate as any).fechaDeNacimiento);
         }
@@ -111,8 +118,14 @@ export class PersonaService implements IService<Persona, string> {
         const dataToUpdate: Partial<Persona> = { ...personaData };
 
         if ('fechaDeNacimiento' in dataToUpdate && typeof (dataToUpdate as any).fechaDeNacimiento === 'string' && !isNaN(new Date((dataToUpdate as any).fechaDeNacimiento).getTime())) {
-            (dataToUpdate as any).fechaDeNacimiento = new Date((dataToUpdate as any).fechaDeNacimiento);
-            logger.debug("[PersonaService] Conversión de fecha (UPDATE) aplicada. Fecha después de la conversión:", (dataToUpdate as any).fechaDeNacimiento);
+            const dateStr = (dataToUpdate as any).fechaDeNacimiento;
+            try {
+                dataToUpdate.fechaDeNacimiento = Temporal.PlainDate.from(dateStr);
+                logger.debug("[PersonaService] Conversión de fecha (UPDATE) aplicada. Fecha después de la conversión:", dataToUpdate.fechaDeNacimiento.toString());
+            } catch (e) {
+                logger.warn(`[PersonaService] Falló la conversión de fecha a Temporal.PlainDate (UPDATE) para: ${dateStr}. Error: ${e}`);
+                dataToUpdate.fechaDeNacimiento = undefined;
+            }
         } else {
             logger.debug("[PersonaService] Conversión de fecha (UPDATE) NO aplicada. Tipo o valor inesperado para fechaDeNacimiento:", typeof (dataToUpdate as any).fechaDeNacimiento, (dataToUpdate as any).fechaDeNacimiento);
         }
@@ -171,7 +184,7 @@ export class PersonaService implements IService<Persona, string> {
         nombre: string;
         apellido: string;
         dni: string;
-        genero: string; 
+        genero: string;
         donanteOrganos: boolean;
     }[]> {
         logger.info("[PersonaService] Obteniendo lista resumida de personas.");
