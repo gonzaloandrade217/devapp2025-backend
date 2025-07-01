@@ -1,0 +1,70 @@
+2025-07-01 18:44:02 [info] Intentando conectar a Firebase Firestore (SDK de cliente).
+2025-07-01 18:44:02 [info] Conectado a Firebase Firestore (SDK de cliente).
+2025-07-01 18:44:02 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-07-01 18:44:02 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-07-01 18:44:02 [info] [AutoService] Instancia creada.
+2025-07-01 18:44:02 [info] [PersonaFirebaseRepository] Instancia creada para colección: personas
+2025-07-01 18:44:02 [info] [AutoFirebaseRepository] Instancia creada para colección: autos
+2025-07-01 18:44:02 [info] [PersonaService] Instancia creada.
+2025-07-01 18:44:02 [info] Example app listening on port 3000
+2025-07-01 18:45:08 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:45:08 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:45:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:45:09 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:45:09 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:45:09 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:45:11 [info] [PersonaController] Solicitud de persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:11 [info] [PersonaService] Intentando obtener persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [personasRepository] Documento encontrado con ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [autosRepository] Se encontraron 1 autos para la persona ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [PersonaService] Persona ID xm2BUmcQEu3K7V7b2b00 recuperada con éxito, incluyendo sus autos asociados.
+2025-07-01 18:45:12 [info] [PersonaController] Solicitud de persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [PersonaService] Intentando obtener persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [personasRepository] Documento encontrado con ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [autosRepository] Se encontraron 1 autos para la persona ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:45:12 [info] [PersonaService] Persona ID xm2BUmcQEu3K7V7b2b00 recuperada con éxito, incluyendo sus autos asociados.
+2025-07-01 18:45:16 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:45:16 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:45:16 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:45:16 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:45:16 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:45:17 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:11 [info] [PersonaController] Solicitud de persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:11 [info] [PersonaService] Intentando obtener persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:12 [info] [personasRepository] Documento encontrado con ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:12 [info] [autosRepository] Se encontraron 1 autos para la persona ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:12 [info] [PersonaService] Persona ID xm2BUmcQEu3K7V7b2b00 recuperada con éxito, incluyendo sus autos asociados.
+2025-07-01 18:48:12 [info] [PersonaController] Solicitud de persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:12 [info] [PersonaService] Intentando obtener persona por ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:12 [info] [personasRepository] Documento encontrado con ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:13 [info] [autosRepository] Se encontraron 1 autos para la persona ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:13 [info] [PersonaService] Persona ID xm2BUmcQEu3K7V7b2b00 recuperada con éxito, incluyendo sus autos asociados.
+2025-07-01 18:48:14 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:14 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:15 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:15 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:15 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:15 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:48:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:48:19 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:19 [info] [PersonaController] Solicitud para obtener todas las personas resumidas.
+2025-07-01 18:48:19 [info] [PersonaService] Obteniendo lista resumida de personas.
+2025-07-01 18:48:19 [info] [personasRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:22 [info] [PersonaController] Intento de eliminación de persona ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:22 [info] [PersonaService] Iniciando la eliminación de la persona con ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:22 [info] [personasRepository] Documento eliminado con éxito. ID: xm2BUmcQEu3K7V7b2b00
+2025-07-01 18:48:22 [info] [PersonaService] Persona ID xm2BUmcQEu3K7V7b2b00 eliminada con éxito.
+2025-07-01 18:48:22 [info] [PersonaController] Persona ID: xm2BUmcQEu3K7V7b2b00 eliminada con éxito.
+2025-07-01 18:48:25 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:25 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:25 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:25 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:25 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:25 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:32 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:32 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:32 [info] [autosRepository] Se obtuvieron 1 documentos.
+2025-07-01 18:48:32 [info] [AutoController] Solicitud de autos. PersonaID: todos
+2025-07-01 18:48:32 [info] [AutoService] Intentando obtener todos los autos.
+2025-07-01 18:48:32 [info] [autosRepository] Se obtuvieron 1 documentos.

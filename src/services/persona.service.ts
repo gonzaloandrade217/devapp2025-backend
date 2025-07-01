@@ -166,6 +166,25 @@ export class PersonaService implements IService<Persona, string> {
     public async delete(id: string): Promise<boolean> {
         logger.info(`[PersonaService] Iniciando la eliminación de la persona con ID: ${id}`);
         try {
+            logger.debug(`[PersonaService] Buscando autos asociados a la persona ID: ${id} para eliminación en cascada.`);
+            const autosToDelete = await this.autoRepository.getByPersonaId(id);
+
+            if (autosToDelete.length > 0) {
+                logger.info(`[PersonaService] Encontrados ${autosToDelete.length} autos para eliminar en cascada para persona ID: ${id}.`);
+                const deletePromises = autosToDelete.map(auto => this.autoRepository.delete(auto.id));
+                const results = await Promise.allSettled(deletePromises);
+
+                results.forEach((result, index) => {
+                    if (result.status === 'fulfilled' && result.value) {
+                        logger.debug(`[PersonaService] Auto ID ${autosToDelete[index].id} eliminado con éxito.`);
+                    } else {
+                        logger.warn(`[PersonaService] Falló la eliminación del auto ID ${autosToDelete[index].id} para persona ID ${id}. Razón: ${result.status === 'rejected' ? result.reason.message : 'No eliminado'}`);
+                    }
+                });
+            } else {
+                logger.info(`[PersonaService] No se encontraron autos asociados para la persona ID: ${id}.`);
+            }
+
             const deleted = await this.personaRepository.delete(id);
             if (deleted) {
                 logger.info(`[PersonaService] Persona ID ${id} eliminada con éxito.`);
